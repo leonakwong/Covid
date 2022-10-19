@@ -22,25 +22,30 @@ zipcodes = ["10001","10002","10003","10004","10005","10006","10007","10009","100
             "11415","11416","11417","11418","11419","11420","11421","11422","11423","11426","11427","11428","11429","11432",
             "11433","11434","11435","11436","11691","11692","11693","11694","11697"]
             
-""""
-def parser(counter,index):
-    for i in range(counter):
-        return covidvax_df.loc[i][index]
-
-latitude = parser(1,"latitude")
-longitude = parser(1,"longitude")
-"""
-
 for store in range(2000):
     if covidvax_df.loc[store]["loc_admin_zip"][:5] in zipcodes:                        #To find nyc stores
+        #lat, long
         latitude = covidvax_df.loc[store]["latitude"]
         longitude = covidvax_df.loc[store]["longitude"]
+        
+        #address
         street = covidvax_df.loc[store]["loc_admin_street1"]
         city = covidvax_df.loc[store]["loc_admin_city"]
         state = covidvax_df.loc[store]["loc_admin_state"]
         zip = covidvax_df.loc[store]["loc_admin_zip"]
-        #new_df = covidvax_df.loc[store]["loc_admin_street1","loc_admin_city","loc_admin_state","loc_admin_zip"]
-        location = "{a}, {b}"
-        address = "{a} {b}, {c} {d}"
-        print(address.format(a = street, b = city, c= state, d = zip))
-        print(location.format(a = latitude, b = longitude))
+        
+        #contact information
+        website = covidvax_df.loc[store]["web_address"]
+        phone = covidvax_df.loc[store]["loc_phone"]
+        name = covidvax_df.loc[store]["loc_name"]
+        store_no = covidvax_df.loc[store]["loc_store_no"]
+
+        contact_format = "Website: {a} \nPhone Number: {b}"
+        location_format = "{a}, {b}"
+        address_format = "{a} {b}, {c} {d}"
+        contact = contact_format.format(a = website, b = phone)
+        address = address_format.format(a = street, b = city, c= state, d = zip)
+        location = location_format.format(a = latitude, b = longitude)
+
+        print(contact)
+
