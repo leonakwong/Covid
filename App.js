@@ -109,9 +109,6 @@ function App() {
     </div>*/
 
   return <>
-    <div>
-      <p>{!data ? "Loading..." : data}</p>
-    </div>
     <div className="App">
       <Navbar bg='myBlue' variant="dark">
         <Navbar.Brand> Project Hygieia</Navbar.Brand>
