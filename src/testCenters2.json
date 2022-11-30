@@ -1,0 +1,1386 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Bronx",
+        "Name": "Burnside Ave and Jerome Ave",
+        "Address": "1 West Burnside Ave\nBronx, NY 10453",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.90755, 40.85399]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Bronx",
+        "Name": "CO-OP City",
+        "Address": "135 Einstein Loop N\nBronx, NY 10475",
+        "Hours": "Monday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.82309, 40.86438]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Bronx",
+        "Name": "CO-OP City",
+        "Address": "177 Dreiser Loop\nBronx, NY 10475",
+        "Hours": "Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.82925, 40.87778]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Bronx",
+        "Name": "CO-OP City",
+        "Address": "2049 Bartow Ave\nBronx, NY 10475",
+        "Hours": "Wednesday - Thursday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.82896, 40.87027]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Bronx",
+        "Name": "Entrance to Crotona Pool//Adjacent to Bathgate Playground",
+        "Address": "1700 Fulton Ave\nBronx, NY 10457",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.89776, 40.8405]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Bronx",
+        "Name": "Hunts Point HRA Center",
+        "Address": "845 Barretto St\nBronx, NY 10474",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.8902857, 40.8173308]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Bronx",
+        "Name": "Monsignor Raul Del Valle Square",
+        "Address": "1051 E 163rd St\nBronx, NY 10459",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.8911387, 40.8210548]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Bronx",
+        "Name": "NYCHA Pelham Parkway",
+        "Address": "920 Mace Ave\nBronx, NY 10469",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.8609634, 40.8626781]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Bronx",
+        "Name": "Rose Hill Park Webster Ave and 193rd St",
+        "Address": "2659 Webster Ave\nBronx, NY 10458",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.8886989, 40.8641662]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Bronx",
+        "Name": "Soundview Park",
+        "Address": "700 Metcalf Ave\nBronx, NY 10473",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.8698197, 40.8184365]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Bronx",
+        "Name": "St. James Park",
+        "Address": "2550 Jerome Ave\nBronx, NY 10468",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.8990466, 40.8645403]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Bronx",
+        "Name": "White Plains and Story Ave",
+        "Address": "880 White Plains Rd\nBronx, NY 10473",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.8583846, 40.8239557]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "55th St and New Utrecht Ave",
+        "Address": "1301 55th Street\nBrooklyn, NY 11219",
+        "Hours": "Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.995266, 40.631563]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "62nd St and 8th Ave",
+        "Address": "6201 8th Ave\nBrooklyn, NY 11220",
+        "Hours": "Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.00637054, 40.63855362]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "Arab American Association",
+        "Address": "6803 5th Avenue\nBrooklyn, NY 11220",
+        "Hours": "Monday: 10:00am-4:00pm, Wednesday - Thursday: 10:00am-4:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.02011108, 40.63566208]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "Brooklyn Navy Yard",
+        "Address": "63 Flushing Ave (Building 6)\nBrooklyn, NY 11205",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.97612762, 40.69807053]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "Brooklyn Neighborhood Health Action Center",
+        "Address": "485 Throop Ave\nBrooklyn, NY 11221",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9411351, 40.6854971]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "Canarsie High School",
+        "Address": "1600 Rockaway Parkway\nBrooklyn, NY 11236",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.89207458, 40.63594437]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "Central Library (BPL)",
+        "Address": "10 Grand Army Plaza\nBrooklyn, NY 11238",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9681891, 40.6721312]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "Church Ave and McDonald",
+        "Address": "472 McDonald Ave\nBrooklyn, NY 11218",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9796044, 40.6425769]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "CM Brannan District 43 Office",
+        "Address": "8203 3rd Avenue\nBrooklyn, NY 11209",
+        "Hours": "Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0296336, 40.6261438]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "Family Services Network of New York Center Inc. (FSNNY)",
+        "Address": "1751 Broadway\nBrooklyn, NY 11207",
+        "Hours": "Monday: 8:30am-3:30pm, Thursday: 10:30am-5:30pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.910426, 40.682996]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "Family Services Network of New York Continuous Access Center (FSNNY)",
+        "Address": "1721 Pitkin Ave\nBrooklyn, NY 11212",
+        "Hours": "Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.90814209, 40.67007446]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "Flatbush and Church",
+        "Address": "866 Flatbush Ave\nBrooklyn, NY 11226",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.959212, 40.651023]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "Flatbush Ave / Nostrand Ave",
+        "Address": "1565 Flatbush Avenue\nBrooklyn, NY 11210",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9472712, 40.6327166]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "Fulton and Nostrand",
+        "Address": "1274 Fulton St\nBrooklyn, NY 11216",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9498547, 40.6802088]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "Herbert Von King Park",
+        "Address": "670 Lafayette Ave\nBrooklyn, NY 11216",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9464046, 40.6898287]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "Hope Christian Church",
+        "Address": "369 New Lots Ave\nBrooklyn, NY 11207",
+        "Hours": "Thursday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.8936043, 40.6618993]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "Hugh Ed Gilroy Older Adult Center",
+        "Address": "447 Kingsborough\nBrooklyn, NY 11233",
+        "Hours": "Monday: 8:00am-4:00pm, Wednesday - Thursday: 8:00am-4:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9246763, 40.6751157]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "Marcy Plaza",
+        "Address": "1385 Fulton Avenue\nBrooklyn, NY 11216",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.945908, 40.680261]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "Mermaid Ave",
+        "Address": "2428 Mermaid Ave\nBrooklyn, NY 11224",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9920045, 40.5755773]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "New Hope Family Worship Center",
+        "Address": "817 Livonia Avenue\nBrooklyn, NY 11207",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.8865164, 40.6659881]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "NYCHA Vandalia Ave",
+        "Address": "20 Vandalia Ave\nBrooklyn, NY 11239",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.8867916, 40.649189]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "Red Hook Initiative",
+        "Address": "767 Hicks St\nBrooklyn, NY 11231",
+        "Hours": "Thursday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.004486, 40.6767364]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "Red Hook Park",
+        "Address": "159 Bay Street\nBrooklyn, NY 11231",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0029843, 40.6718707]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "Saratoga Park",
+        "Address": "112 Howard Ave\nBrooklyn, NY 11233",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9204821, 40.6846503]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "Sternberg Park",
+        "Address": "54 Boerum St\nBrooklyn, NY 11206",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9470412, 40.7050244]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "Sunset Park",
+        "Address": "4200 7th Ave\nBrooklyn, NY 11232",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0021154, 40.6469263]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Brooklyn",
+        "Name": "Williamsburg HRA Center",
+        "Address": "2 George St\nBrooklyn, NY 11206",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.932597, 40.700109]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Staten Island",
+        "Name": "Bloomingdale",
+        "Address": "225 Lenavar Ave Staten Island, NY 10309",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.20787, 40.53546]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Staten Island",
+        "Name": "Clove Lakes Park",
+        "Address": "1124 Clove Rd Staten Island, NY 10301",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.10573, 40.61863]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Staten Island",
+        "Name": "Conference House Park",
+        "Address": "298 Satterlee St Staten Island, NY 10307",
+        "Hours": "Monday: 8:00am-6:00pm, Thursday: 8:00am-6:00pm, Saturday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.25166, 40.5023]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Staten Island",
+        "Name": "Forest and Barrett",
+        "Address": "1351 Forest Ave Staten Island, NY 10302",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.135094, 40.62661]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Staten Island",
+        "Name": "Gotham Vanderbilt",
+        "Address": "165 Vanderbilt Ave Staten Island, NY 10304",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.07689, 40.62035]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Staten Island",
+        "Name": "Hylan Blvd",
+        "Address": "2820 Hylan Blvd Staten Island, NY 10306",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.11581569, 40.56384163]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Staten Island",
+        "Name": "NYC Health + Hospitals Seaview",
+        "Address": "460 Brielle Ave Staten Island, NY 10314",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.13414872, 40.59209101]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Staten Island",
+        "Name": "NYCHA Mariners Harbor",
+        "Address": "311 Grandview Ave Staten Island, NY 10303",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.16334383, 40.63265977]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Staten Island",
+        "Name": "Staten Island Ferry",
+        "Address": "1 Bay St Staten Island, NY 10301",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.07248427, 40.64408756]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Staten Island",
+        "Name": "Wolfe's Pond Park (Parking Lot)",
+        "Address": "Wolfe's Pond Park Parking Lot, Chester St Staten Island, NY 10312",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.19008932, 40.51760006]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Manhattan",
+        "Name": "Abyssinian Baptist Church",
+        "Address": "132 West 138th Street\nNew York, NY 10030",
+        "Hours": "Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.94268, 40.81735]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Manhattan",
+        "Name": "Bennett Park",
+        "Address": "521 Fort Washington Ave\nNew York, NY 10033",
+        "Hours": "Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9381, 40.85285]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Manhattan",
+        "Name": "Bloomingdale Playground",
+        "Address": "907 Amsterdam Ave\nNew York, NY 10025",
+        "Hours": "Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.96621, 40.79936]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Manhattan",
+        "Name": "Columbus Park",
+        "Address": "35 Baxter St\nNew York, NY 10013",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.00059, 40.71546]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Manhattan",
+        "Name": "First Spanish UMC",
+        "Address": "163 E 111th street\nNew York, NY 10029",
+        "Hours": "Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.94359169, 40.79554177]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Manhattan",
+        "Name": "Frederick Douglas Blvd",
+        "Address": "2927 Frederick Douglas BLVD\nNew York, NY 10039",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.93743323, 40.82974696]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Manhattan",
+        "Name": "Gotham Dyckman",
+        "Address": "175 Nagle Ave\nNew York, NY 10034",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.92427014, 40.86155525]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Manhattan",
+        "Name": "Gotham Sydenham",
+        "Address": "264 W 118th St\nNew York, NY 10026",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.95367293, 40.80537332]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Manhattan",
+        "Name": "Isham Park",
+        "Address": "5003 Broadway\nNew York, NY 10034",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.91748513, 40.86933282]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Manhattan",
+        "Name": "LSA Family Health",
+        "Address": "333 E 115th St\nNew York, NY 10029",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.93661283, 40.79610487]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Manhattan",
+        "Name": "Masaryk Towers",
+        "Address": "75 Columbia Street\nNew York, NY 10002",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.98018207, 40.71797435]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Manhattan",
+        "Name": "Mitchel Square",
+        "Address": "3975 Broadway\nNew York, NY 10032",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.93993186, 40.84078058]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Manhattan",
+        "Name": "NYCHA Manhattanville",
+        "Address": "549 W 126th St\nNew York, NY 10027",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.95711264, 40.81646087]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Manhattan",
+        "Name": "Quisqueya Playground",
+        "Address": "2405 Amsterdam Ave\nNew York, NY 10033",
+        "Hours": "Saturday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.93131152, 40.84725199]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Manhattan",
+        "Name": "Tompkins Square Park",
+        "Address": "144 Avenue A\nNew York, NY 10009",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9816805, 40.72665695]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "Baisley Pond South Playground",
+        "Address": "130-4 150th St\nQueens, NY 11436",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.78909509, 40.66996011]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "Crocheron Park",
+        "Address": "33-8 215th Pl\nQueens, NY 11361Queens, NY 11436",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.76985416, 40.77274258]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "Electric Playground",
+        "Address": "164th St. & 65th Ave\nQueens, NY 11365",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.80487722, 40.73703339]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "Episcopal Church of St. Alban the Martyr",
+        "Address": "116-42 Farmers Blvd.\nQueens, NY 11412",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.76285506, 40.69278984]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "Family Services Network of New York Center Inc. (FSNNY)",
+        "Address": "192-16 Linden Blvd\nQueens, NY 11412",
+        "Hours": "Wednesday: 9:00am-3:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.75870203, 40.6925651]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "Gotham Ridgewood",
+        "Address": "769 Onderdonk Ave\nQueens, NY 11385",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.90554186, 40.70332665]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "Greater Allen Cathedral of NY",
+        "Address": "110-31 Merrick Blvd\nQueens, NY 11433",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7806024, 40.69524523]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "John F. Kennedy Airport",
+        "Address": "Terminal 8, Red Garage, Level 1, Central Terminal Area\nQueens, NY 11430",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.78887175, 40.6464779]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "Kew Gardens/Union Turnpike",
+        "Address": "120-20 Queens Blvd\nQueens, NY 11415",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.82961512, 40.71359659]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "LaGuardia Airport",
+        "Address": "Terminal B Parking Lot, 1 Central Terminal Dr.\nQueens, NY 11371",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.87530077, 40.77295535]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "Liberty Ave",
+        "Address": "134-15 Liberty Ave\nQueens, NY 11419",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.81222116, 40.69190998]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "LIFE Camp Inc.",
+        "Address": "111-12 Sutphin Blvd\nQueens, NY 11435",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.79562882, 40.6884864]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "MacDonald Park",
+        "Address": "10606 Queens Blvd\nQueens, NY 11375",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.84689514, 40.72159097]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "Murray Park",
+        "Address": "11-01 45th Rd\nQueens, NY 11101",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9489094, 40.74750512]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "Northern Playground",
+        "Address": "33-1 94th St\nQueens, NY 11372",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.87411527, 40.75686185]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "NYCHA Pomonok",
+        "Address": "6709 Kissena Blvd\nQueens, NY 11367",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.81426931, 40.7351143]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "NYCHA Woodside",
+        "Address": "50-37 Newtown Road\nQueens, NY 11377",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.91041673, 40.75365015]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "Park of the Americas",
+        "Address": "103-8 42nd Ave\nQueens, NY 11368",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.86181182, 40.74805481]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "Phil \"Scooter\" Rizzuto Park",
+        "Address": "125 95th Avenue\nQueens, NY 11419",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.82169258, 40.69393286]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "Queens Musuem",
+        "Address": "126 Flushing Meadows Corona Park Rd\nQueens, NY 11368",
+        "Hours": "Wednesday: 8:00am-6:00pm, Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.84641329, 40.74589883]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "Queens Public Library at Flushing",
+        "Address": "41-17 Main St\nQueens, NY 11355",
+        "Hours": "Monday: 8:00am-6:00pm, Thursday: 8:00am-6:00pm, Saturday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.82844425, 40.75790604]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "Richmond Hill/Rego Park 95-25 Queens Blvd",
+        "Address": "95-25 Queens Blvd\nQueens, NY 11374",
+        "Hours": "Monday: 8:00am-4:00pm, Wednesday - Thursday: 8:00am-4:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.86284991, 40.73116006]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "Robert Couche Older Adult Center",
+        "Address": "137-57 Farmers Boulevard\nQueens, NY 11434",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.76320563, 40.6727127]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "Rochdale Village Mall",
+        "Address": "165-98 Baisley Blvd\nQueens, NY 11434",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7779592, 40.67953228]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "Rockaway YMCA",
+        "Address": "207 Beach 73rd Street\nQueens, NY 11692",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.80078873, 40.58961196]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "Sisterhood of Destiny Inc",
+        "Address": "162-108th Ave\nQueens, NY 11433",
+        "Hours": "Saturday: 8am-4pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7910298, 40.69664956]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "Sorrentino Recreation Center",
+        "Address": "10-12 Beach 19th St\nQueens, NY 11691",
+        "Hours": "Monday: 8:00am-6:00pm, Wednesday - Thursday: 8:00am-6:00pm, Saturday - Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.75206199, 40.60267539]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Borough": "Queens",
+        "Name": "Sts. Joachim and Anne Parish",
+        "Address": "21827 Hollis Ave\nQueens, NY 11429",
+        "Hours": "Wednesday: 9:00am-7:00pm, Sunday: 8:00am-6:00pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.73870368, 40.7119142]
+      },
+
+      "Web": "https://www.nyc.gov/site/coronavirus/get-tested/covid-19-testing.page"
+    }
+  ],
+
+  "type": "FeatureCollection"
+}

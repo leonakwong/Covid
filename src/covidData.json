@@ -1,0 +1,1776 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "modzcta": 10001,
+      "modzcta_name": "Chelsea/NoMad/West Chelsea",
+      "lat": 40.750693,
+      "lon": -73.997137,
+      "people_positive_7day": 45,
+      "hospitalization_count_28day": 10,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10002,
+      "modzcta_name": "Chinatown/Lower East Side",
+      "lat": 40.715781,
+      "lon": -73.986176,
+      "people_positive_7day": 76,
+      "hospitalization_count_28day": 23,
+      "death_count_28day": 6
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10003,
+      "modzcta_name": "East Village/Gramercy/Greenwich Village",
+      "lat": 40.731825,
+      "lon": -73.989164,
+      "people_positive_7day": 55,
+      "hospitalization_count_28day": 9,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10004,
+      "modzcta_name": "Financial District",
+      "lat": 40.703675,
+      "lon": -74.01310600000001,
+      "people_positive_7day": 3,
+      "hospitalization_count_28day": 0,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10005,
+      "modzcta_name": "Financial District",
+      "lat": 40.706092,
+      "lon": -74.008861,
+      "people_positive_7day": 7,
+      "hospitalization_count_28day": 4,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10006,
+      "modzcta_name": "Financial District",
+      "lat": 40.709651,
+      "lon": -74.013044,
+      "people_positive_7day": 3,
+      "hospitalization_count_28day": 0,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10007,
+      "modzcta_name": "TriBeCa",
+      "lat": 40.713923,
+      "lon": -74.00754599999999,
+      "people_positive_7day": 8,
+      "hospitalization_count_28day": 0,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10009,
+      "modzcta_name": "Alphabet City/East Village/Stuyvesant Town-Cooper Village",
+      "lat": 40.72638,
+      "lon": -73.97870400000001,
+      "people_positive_7day": 63,
+      "hospitalization_count_28day": 11,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10010,
+      "modzcta_name": "Flatiron/Gramercy/Kips Bay",
+      "lat": 40.739119,
+      "lon": -73.98254399999999,
+      "people_positive_7day": 44,
+      "hospitalization_count_28day": 7,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10011,
+      "modzcta_name": "Chelsea",
+      "lat": 40.741707,
+      "lon": -74.000062,
+      "people_positive_7day": 36,
+      "hospitalization_count_28day": 8,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10012,
+      "modzcta_name": "Greenwich Village/SoHo",
+      "lat": 40.725576000000004,
+      "lon": -73.998078,
+      "people_positive_7day": 23,
+      "hospitalization_count_28day": 6,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10013,
+      "modzcta_name": "Hudson Square/Little Italy/SoHo/TriBeCa",
+      "lat": 40.720096000000005,
+      "lon": -74.004763,
+      "people_positive_7day": 21,
+      "hospitalization_count_28day": 9,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10014,
+      "modzcta_name": "Hudson Square/Meatpacking District/West Village",
+      "lat": 40.73402,
+      "lon": -74.006314,
+      "people_positive_7day": 23,
+      "hospitalization_count_28day": 5,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10016,
+      "modzcta_name": "Kips Bay/Murray Hill/NoMad",
+      "lat": 40.745174,
+      "lon": -73.978319,
+      "people_positive_7day": 60,
+      "hospitalization_count_28day": 12,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10017,
+      "modzcta_name": "East Midtown/Murray Hill",
+      "lat": 40.752543,
+      "lon": -73.973037,
+      "people_positive_7day": 24,
+      "hospitalization_count_28day": 3,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10018,
+      "modzcta_name": "Hell's Kitchen/Midtown Manhattan",
+      "lat": 40.755190999999996,
+      "lon": -73.992667,
+      "people_positive_7day": 20,
+      "hospitalization_count_28day": 0,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10019,
+      "modzcta_name": "Hell's Kitchen/Midtown Manhattan",
+      "lat": 40.76528,
+      "lon": -73.985974,
+      "people_positive_7day": 64,
+      "hospitalization_count_28day": 12,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10021,
+      "modzcta_name": "Lenox Hill/Upper East Side",
+      "lat": 40.769474,
+      "lon": -73.958771,
+      "people_positive_7day": 59,
+      "hospitalization_count_28day": 12,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10022,
+      "modzcta_name": "East Midtown",
+      "lat": 40.758676,
+      "lon": -73.968098,
+      "people_positive_7day": 42,
+      "hospitalization_count_28day": 4,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10023,
+      "modzcta_name": "Lincoln Square",
+      "lat": 40.775901,
+      "lon": -73.982658,
+      "people_positive_7day": 77,
+      "hospitalization_count_28day": 16,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10024,
+      "modzcta_name": "Upper West Side",
+      "lat": 40.792085,
+      "lon": -73.974871,
+      "people_positive_7day": 65,
+      "hospitalization_count_28day": 17,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10025,
+      "modzcta_name": "Manhattan Valley/Morningside Heights/Upper West Side",
+      "lat": 40.798651,
+      "lon": -73.966585,
+      "people_positive_7day": 130,
+      "hospitalization_count_28day": 28,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10026,
+      "modzcta_name": "Central Harlem (South)",
+      "lat": 40.802341,
+      "lon": -73.95252099999999,
+      "people_positive_7day": 41,
+      "hospitalization_count_28day": 12,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10027,
+      "modzcta_name": "Central Harlem (South)/Morningside Heights/West Harlem",
+      "lat": 40.8118,
+      "lon": -73.953204,
+      "people_positive_7day": 57,
+      "hospitalization_count_28day": 11,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10028,
+      "modzcta_name": "Upper East Side/Yorkville",
+      "lat": 40.776432,
+      "lon": -73.953509,
+      "people_positive_7day": 51,
+      "hospitalization_count_28day": 12,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10029,
+      "modzcta_name": "East Harlem",
+      "lat": 40.791777,
+      "lon": -73.943969,
+      "people_positive_7day": 90,
+      "hospitalization_count_28day": 23,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10030,
+      "modzcta_name": "Central Harlem (North)",
+      "lat": 40.818326,
+      "lon": -73.942842,
+      "people_positive_7day": 24,
+      "hospitalization_count_28day": 16,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10031,
+      "modzcta_name": "Hamilton Heights/West Harlem",
+      "lat": 40.825278000000004,
+      "lon": -73.950037,
+      "people_positive_7day": 34,
+      "hospitalization_count_28day": 19,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10032,
+      "modzcta_name": "Washington Heights (South)",
+      "lat": 40.838768,
+      "lon": -73.942824,
+      "people_positive_7day": 42,
+      "hospitalization_count_28day": 12,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10033,
+      "modzcta_name": "Washington Heights (North)/Washington Heights (South)",
+      "lat": 40.850497,
+      "lon": -73.934007,
+      "people_positive_7day": 47,
+      "hospitalization_count_28day": 11,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10034,
+      "modzcta_name": "Inwood/Washington Heights (North)",
+      "lat": 40.867168,
+      "lon": -73.924048,
+      "people_positive_7day": 26,
+      "hospitalization_count_28day": 14,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10035,
+      "modzcta_name": "East Harlem",
+      "lat": 40.791,
+      "lon": -73.924596,
+      "people_positive_7day": 45,
+      "hospitalization_count_28day": 19,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10036,
+      "modzcta_name": "Hell's Kitchen/Midtown Manhattan",
+      "lat": 40.759159999999994,
+      "lon": -73.989705,
+      "people_positive_7day": 34,
+      "hospitalization_count_28day": 11,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10037,
+      "modzcta_name": "Central Harlem (North)/East Harlem",
+      "lat": 40.812957,
+      "lon": -73.93741899999999,
+      "people_positive_7day": 20,
+      "hospitalization_count_28day": 10,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10038,
+      "modzcta_name": "Chinatown/Financial District",
+      "lat": 40.709696,
+      "lon": -74.002391,
+      "people_positive_7day": 14,
+      "hospitalization_count_28day": 4,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10039,
+      "modzcta_name": "Central Harlem (North)/Washington Heights (South)",
+      "lat": 40.830807,
+      "lon": -73.936247,
+      "people_positive_7day": 27,
+      "hospitalization_count_28day": 9,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10040,
+      "modzcta_name": "Washington Heights (North)",
+      "lat": 40.858309999999996,
+      "lon": -73.93049,
+      "people_positive_7day": 27,
+      "hospitalization_count_28day": 5,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10044,
+      "modzcta_name": "Roosevelt Island",
+      "lat": 40.761931,
+      "lon": -73.949924,
+      "people_positive_7day": 14,
+      "hospitalization_count_28day": 4,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10065,
+      "modzcta_name": "Lenox Hill/Upper East Side",
+      "lat": 40.764616,
+      "lon": -73.963135,
+      "people_positive_7day": 51,
+      "hospitalization_count_28day": 5,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10069,
+      "modzcta_name": "Lincoln Square",
+      "lat": 40.775923999999996,
+      "lon": -73.990256,
+      "people_positive_7day": 10,
+      "hospitalization_count_28day": 0,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10075,
+      "modzcta_name": "Lenox Hill/Upper East Side",
+      "lat": 40.773132000000004,
+      "lon": -73.955884,
+      "people_positive_7day": 35,
+      "hospitalization_count_28day": 7,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10128,
+      "modzcta_name": "Upper East Side/Yorkville",
+      "lat": 40.781465999999995,
+      "lon": -73.950226,
+      "people_positive_7day": 73,
+      "hospitalization_count_28day": 15,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10280,
+      "modzcta_name": "Battery Park City",
+      "lat": 40.709317999999996,
+      "lon": -74.016654,
+      "people_positive_7day": 4,
+      "hospitalization_count_28day": 1,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10282,
+      "modzcta_name": "Battery Park City",
+      "lat": 40.716409000000006,
+      "lon": -74.015077,
+      "people_positive_7day": 3,
+      "hospitalization_count_28day": 1,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10301,
+      "modzcta_name": "Silver Lake/St. George",
+      "lat": 40.628223999999996,
+      "lon": -74.096232,
+      "people_positive_7day": 31,
+      "hospitalization_count_28day": 14,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10302,
+      "modzcta_name": "Elm Park",
+      "lat": 40.630598,
+      "lon": -74.137891,
+      "people_positive_7day": 23,
+      "hospitalization_count_28day": 4,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10303,
+      "modzcta_name": "Graniteville/Mariner's Harbor/Port Ivory",
+      "lat": 40.632135,
+      "lon": -74.169166,
+      "people_positive_7day": 30,
+      "hospitalization_count_28day": 9,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10304,
+      "modzcta_name": "New Dorp/Todt Hill",
+      "lat": 40.605985,
+      "lon": -74.0943,
+      "people_positive_7day": 57,
+      "hospitalization_count_28day": 18,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10305,
+      "modzcta_name": "Arrochar/Midland Beach/Shore Acres/South Beach Ocean Breeze",
+      "lat": 40.595473999999996,
+      "lon": -74.075437,
+      "people_positive_7day": 47,
+      "hospitalization_count_28day": 14,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10306,
+      "modzcta_name": "Lighthouse Hill/Midland Beach/New Dorp/Oakwood",
+      "lat": 40.571571,
+      "lon": -74.125541,
+      "people_positive_7day": 74,
+      "hospitalization_count_28day": 30,
+      "death_count_28day": 5
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10307,
+      "modzcta_name": "Tottenville",
+      "lat": 40.507771000000005,
+      "lon": -74.24226999999999,
+      "people_positive_7day": 10,
+      "hospitalization_count_28day": 5,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10308,
+      "modzcta_name": "Great Kills",
+      "lat": 40.551574,
+      "lon": -74.15045400000001,
+      "people_positive_7day": 37,
+      "hospitalization_count_28day": 15,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10309,
+      "modzcta_name": "Charleston/Prince's Bay/Woodrow",
+      "lat": 40.531355,
+      "lon": -74.220574,
+      "people_positive_7day": 27,
+      "hospitalization_count_28day": 14,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10310,
+      "modzcta_name": "Port Richmond/Randall Manor/West Brighton",
+      "lat": 40.632397999999995,
+      "lon": -74.11618,
+      "people_positive_7day": 35,
+      "hospitalization_count_28day": 4,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10312,
+      "modzcta_name": "Annadale/Rossville",
+      "lat": 40.545128000000005,
+      "lon": -74.18169,
+      "people_positive_7day": 84,
+      "hospitalization_count_28day": 22,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10314,
+      "modzcta_name": "Bloomfield/Freshkills Park",
+      "lat": 40.599333,
+      "lon": -74.166462,
+      "people_positive_7day": 99,
+      "hospitalization_count_28day": 41,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10451,
+      "modzcta_name": "Concourse/Melrose",
+      "lat": 40.820705,
+      "lon": -73.923865,
+      "people_positive_7day": 44,
+      "hospitalization_count_28day": 26,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10452,
+      "modzcta_name": "Concourse/Highbridge",
+      "lat": 40.837364,
+      "lon": -73.923461,
+      "people_positive_7day": 39,
+      "hospitalization_count_28day": 18,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10453,
+      "modzcta_name": "Morris Heights/Mount Hope/University Heights",
+      "lat": 40.852304,
+      "lon": -73.913578,
+      "people_positive_7day": 65,
+      "hospitalization_count_28day": 22,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10454,
+      "modzcta_name": "Mott Haven/Port Morris",
+      "lat": 40.805487,
+      "lon": -73.916605,
+      "people_positive_7day": 35,
+      "hospitalization_count_28day": 20,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10455,
+      "modzcta_name": "Mott Haven",
+      "lat": 40.8147,
+      "lon": -73.908583,
+      "people_positive_7day": 40,
+      "hospitalization_count_28day": 20,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10456,
+      "modzcta_name": "Claremont/Morrisania",
+      "lat": 40.829884,
+      "lon": -73.908121,
+      "people_positive_7day": 54,
+      "hospitalization_count_28day": 31,
+      "death_count_28day": 5
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10457,
+      "modzcta_name": "Belmont/Claremont/Mount Hope/Tremont",
+      "lat": 40.847151000000004,
+      "lon": -73.898676,
+      "people_positive_7day": 50,
+      "hospitalization_count_28day": 21,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10458,
+      "modzcta_name": "Belmont/Fordham University/Kingsbridge",
+      "lat": 40.862531,
+      "lon": -73.88817,
+      "people_positive_7day": 44,
+      "hospitalization_count_28day": 25,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10459,
+      "modzcta_name": "Charlotte Gardens/Hunts Point",
+      "lat": 40.82584,
+      "lon": -73.892976,
+      "people_positive_7day": 37,
+      "hospitalization_count_28day": 22,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10460,
+      "modzcta_name": "Charlotte Gardens/Tremont/Van Nest/West Farms",
+      "lat": 40.841753000000004,
+      "lon": -73.879584,
+      "people_positive_7day": 54,
+      "hospitalization_count_28day": 29,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10461,
+      "modzcta_name": "Morris Park/Pelham Bay/Westchester Square",
+      "lat": 40.847415000000005,
+      "lon": -73.840601,
+      "people_positive_7day": 52,
+      "hospitalization_count_28day": 11,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10462,
+      "modzcta_name": "Parkchester/Pelham Parkway/Van Nest/Westchester Square",
+      "lat": 40.842874,
+      "lon": -73.858772,
+      "people_positive_7day": 64,
+      "hospitalization_count_28day": 28,
+      "death_count_28day": 6
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10463,
+      "modzcta_name": "Kingsbridge/Marble Hill/Riverdale/Spuyten Duyvil",
+      "lat": 40.880824,
+      "lon": -73.906514,
+      "people_positive_7day": 56,
+      "hospitalization_count_28day": 38,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10464,
+      "modzcta_name": "City Island",
+      "lat": 40.872310999999996,
+      "lon": -73.804653,
+      "people_positive_7day": 3,
+      "hospitalization_count_28day": 0,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10465,
+      "modzcta_name": "Country Club/Throgs Neck",
+      "lat": 40.823931,
+      "lon": -73.822886,
+      "people_positive_7day": 43,
+      "hospitalization_count_28day": 16,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10466,
+      "modzcta_name": "Edenwald/Wakefield",
+      "lat": 40.890965,
+      "lon": -73.845912,
+      "people_positive_7day": 47,
+      "hospitalization_count_28day": 20,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10467,
+      "modzcta_name": "Allerton/Norwood/Pelham Parkway/Williamsbridge",
+      "lat": 40.880939,
+      "lon": -73.873956,
+      "people_positive_7day": 89,
+      "hospitalization_count_28day": 50,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10468,
+      "modzcta_name": "Fordham/Kingsbridge/University Heights",
+      "lat": 40.868161,
+      "lon": -73.89984399999999,
+      "people_positive_7day": 52,
+      "hospitalization_count_28day": 19,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10469,
+      "modzcta_name": "Allerton/Baychester/Pelham Gardens/Williamsbridge",
+      "lat": 40.868759999999995,
+      "lon": -73.84698399999999,
+      "people_positive_7day": 50,
+      "hospitalization_count_28day": 29,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10470,
+      "modzcta_name": "Wakefield/Woodlawn",
+      "lat": 40.895986,
+      "lon": -73.86802,
+      "people_positive_7day": 16,
+      "hospitalization_count_28day": 3,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10471,
+      "modzcta_name": "Fieldston/North Riverdale/Riverdale",
+      "lat": 40.899509,
+      "lon": -73.90151800000001,
+      "people_positive_7day": 17,
+      "hospitalization_count_28day": 9,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10472,
+      "modzcta_name": "Soundview",
+      "lat": 40.829561,
+      "lon": -73.869393,
+      "people_positive_7day": 54,
+      "hospitalization_count_28day": 29,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10473,
+      "modzcta_name": "Castle Hill/Clason Point/Soundview",
+      "lat": 40.818135,
+      "lon": -73.85871800000001,
+      "people_positive_7day": 54,
+      "hospitalization_count_28day": 19,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10474,
+      "modzcta_name": "Hunts Point",
+      "lat": 40.810595,
+      "lon": -73.884618,
+      "people_positive_7day": 3,
+      "hospitalization_count_28day": 4,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 10475,
+      "modzcta_name": "Co-op City/Edenwald",
+      "lat": 40.868941,
+      "lon": -73.824854,
+      "people_positive_7day": 38,
+      "hospitalization_count_28day": 32,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11004,
+      "modzcta_name": "Bellerose/Douglaston-Little Neck",
+      "lat": 40.748067999999996,
+      "lon": -73.71090699999999,
+      "people_positive_7day": 14,
+      "hospitalization_count_28day": 3,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11101,
+      "modzcta_name": "Astoria (South)/Long Island City/Sunnyside",
+      "lat": 40.747077000000004,
+      "lon": -73.938586,
+      "people_positive_7day": 60,
+      "hospitalization_count_28day": 15,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11102,
+      "modzcta_name": "Astoria (North)",
+      "lat": 40.772498,
+      "lon": -73.925912,
+      "people_positive_7day": 34,
+      "hospitalization_count_28day": 14,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11103,
+      "modzcta_name": "Astoria (North)/Astoria (South)",
+      "lat": 40.762536,
+      "lon": -73.91354100000001,
+      "people_positive_7day": 36,
+      "hospitalization_count_28day": 11,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11104,
+      "modzcta_name": "Sunnyside",
+      "lat": 40.744658,
+      "lon": -73.92020500000001,
+      "people_positive_7day": 25,
+      "hospitalization_count_28day": 3,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11105,
+      "modzcta_name": "Ditmars Steinway",
+      "lat": 40.778969000000004,
+      "lon": -73.906286,
+      "people_positive_7day": 37,
+      "hospitalization_count_28day": 8,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11106,
+      "modzcta_name": "Astoria (South)",
+      "lat": 40.761792,
+      "lon": -73.931771,
+      "people_positive_7day": 32,
+      "hospitalization_count_28day": 6,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11109,
+      "modzcta_name": "Long Island City",
+      "lat": 40.746210999999995,
+      "lon": -73.956999,
+      "people_positive_7day": 6,
+      "hospitalization_count_28day": 0,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11201,
+      "modzcta_name": "Brooklyn Heights/DUMBO/Downtown Brooklyn",
+      "lat": 40.694609,
+      "lon": -73.989581,
+      "people_positive_7day": 65,
+      "hospitalization_count_28day": 8,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11203,
+      "modzcta_name": "East Flatbush (North)/East Flatbush (South)",
+      "lat": 40.649576,
+      "lon": -73.934363,
+      "people_positive_7day": 52,
+      "hospitalization_count_28day": 32,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11204,
+      "modzcta_name": "Bensonhurst/Mapleton",
+      "lat": 40.618774,
+      "lon": -73.984824,
+      "people_positive_7day": 57,
+      "hospitalization_count_28day": 19,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11205,
+      "modzcta_name": "Bedford-Stuyvesant (West)/Clinton Hill/Fort Greene",
+      "lat": 40.694625,
+      "lon": -73.966212,
+      "people_positive_7day": 37,
+      "hospitalization_count_28day": 16,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11206,
+      "modzcta_name": "Williamsburg (South)",
+      "lat": 40.701957,
+      "lon": -73.942361,
+      "people_positive_7day": 62,
+      "hospitalization_count_28day": 23,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11207,
+      "modzcta_name": "Cypress Hills/East New York",
+      "lat": 40.670819,
+      "lon": -73.894255,
+      "people_positive_7day": 64,
+      "hospitalization_count_28day": 36,
+      "death_count_28day": 5
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11208,
+      "modzcta_name": "Cypress Hills/East New York",
+      "lat": 40.668385,
+      "lon": -73.871084,
+      "people_positive_7day": 73,
+      "hospitalization_count_28day": 27,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11209,
+      "modzcta_name": "Bay Ridge/Fort Hamilton",
+      "lat": 40.621811,
+      "lon": -74.030011,
+      "people_positive_7day": 64,
+      "hospitalization_count_28day": 18,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11210,
+      "modzcta_name": "Flatlands/Midwood",
+      "lat": 40.628165,
+      "lon": -73.94631600000001,
+      "people_positive_7day": 43,
+      "hospitalization_count_28day": 23,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11211,
+      "modzcta_name": "East Williamsburg/Williamsburg (North)/Williamsburg (South)",
+      "lat": 40.712334000000006,
+      "lon": -73.953851,
+      "people_positive_7day": 64,
+      "hospitalization_count_28day": 19,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11212,
+      "modzcta_name": "Ocean Hill-Brownsville",
+      "lat": 40.662935,
+      "lon": -73.913011,
+      "people_positive_7day": 65,
+      "hospitalization_count_28day": 28,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11213,
+      "modzcta_name": "Crown Heights (East)",
+      "lat": 40.671074,
+      "lon": -73.93633,
+      "people_positive_7day": 53,
+      "hospitalization_count_28day": 26,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11214,
+      "modzcta_name": "Bath Beach/Bensonhurst/Gravesend",
+      "lat": 40.598729,
+      "lon": -73.99620999999999,
+      "people_positive_7day": 91,
+      "hospitalization_count_28day": 31,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11215,
+      "modzcta_name": "Gowanus/Park Slope/Windsor Terrace",
+      "lat": 40.66252,
+      "lon": -73.98687199999999,
+      "people_positive_7day": 60,
+      "hospitalization_count_28day": 10,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11216,
+      "modzcta_name": "Bedford-Stuyvesant (West)/Crown Heights (West)",
+      "lat": 40.680785,
+      "lon": -73.94931,
+      "people_positive_7day": 55,
+      "hospitalization_count_28day": 14,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11217,
+      "modzcta_name": "Boerum Hill/Park Slope",
+      "lat": 40.682417,
+      "lon": -73.97938,
+      "people_positive_7day": 58,
+      "hospitalization_count_28day": 9,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11218,
+      "modzcta_name": "Kensington/Windsor Terrace",
+      "lat": 40.64348,
+      "lon": -73.97604399999999,
+      "people_positive_7day": 64,
+      "hospitalization_count_28day": 23,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11219,
+      "modzcta_name": "Borough Park",
+      "lat": 40.632661999999996,
+      "lon": -73.996666,
+      "people_positive_7day": 48,
+      "hospitalization_count_28day": 24,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11220,
+      "modzcta_name": "Sunset Park",
+      "lat": 40.641081,
+      "lon": -74.01649499999999,
+      "people_positive_7day": 77,
+      "hospitalization_count_28day": 18,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11221,
+      "modzcta_name": "Bedford-Stuyvesant (East)/Bushwick",
+      "lat": 40.691339,
+      "lon": -73.927885,
+      "people_positive_7day": 65,
+      "hospitalization_count_28day": 19,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11222,
+      "modzcta_name": "Greenpoint",
+      "lat": 40.728291999999996,
+      "lon": -73.947562,
+      "people_positive_7day": 38,
+      "hospitalization_count_28day": 5,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11223,
+      "modzcta_name": "Gravesend/Homecrest",
+      "lat": 40.597169,
+      "lon": -73.973422,
+      "people_positive_7day": 73,
+      "hospitalization_count_28day": 23,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11224,
+      "modzcta_name": "Brighton Beach/Coney Island/Seagate",
+      "lat": 40.57666,
+      "lon": -73.98858100000001,
+      "people_positive_7day": 65,
+      "hospitalization_count_28day": 33,
+      "death_count_28day": 7
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11225,
+      "modzcta_name": "Crown Heights (West)/Prospect Lefferts Gardens",
+      "lat": 40.663056,
+      "lon": -73.954226,
+      "people_positive_7day": 30,
+      "hospitalization_count_28day": 17,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11226,
+      "modzcta_name": "Flatbush/Prospect Lefferts Gardens",
+      "lat": 40.646456,
+      "lon": -73.956654,
+      "people_positive_7day": 65,
+      "hospitalization_count_28day": 30,
+      "death_count_28day": 5
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11228,
+      "modzcta_name": "Bath Beach/Dyker Heights",
+      "lat": 40.616715,
+      "lon": -74.013054,
+      "people_positive_7day": 30,
+      "hospitalization_count_28day": 12,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11229,
+      "modzcta_name": "Gerritsen Beach/Homecrest/Sheepshead Bay",
+      "lat": 40.601175,
+      "lon": -73.94446500000001,
+      "people_positive_7day": 82,
+      "hospitalization_count_28day": 30,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11230,
+      "modzcta_name": "Midwood",
+      "lat": 40.622164,
+      "lon": -73.965096,
+      "people_positive_7day": 75,
+      "hospitalization_count_28day": 21,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11231,
+      "modzcta_name": "Carroll Gardens/Cobble Hill/Red Hook",
+      "lat": 40.677562,
+      "lon": -74.00444499999999,
+      "people_positive_7day": 30,
+      "hospitalization_count_28day": 3,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11232,
+      "modzcta_name": "Sunset Park",
+      "lat": 40.655984000000004,
+      "lon": -74.00530400000001,
+      "people_positive_7day": 31,
+      "hospitalization_count_28day": 4,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11233,
+      "modzcta_name": "Bedford-Stuyvesant (East)/Ocean Hill-Brownsville",
+      "lat": 40.678302,
+      "lon": -73.919931,
+      "people_positive_7day": 45,
+      "hospitalization_count_28day": 30,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11234,
+      "modzcta_name": "Bergen Beach/Flatlands/Marine Park/Mill Basin",
+      "lat": 40.60758,
+      "lon": -73.910513,
+      "people_positive_7day": 71,
+      "hospitalization_count_28day": 17,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11235,
+      "modzcta_name": "Brighton Beach/Manhattan Beach/Sheepshead Bay",
+      "lat": 40.583915000000005,
+      "lon": -73.949669,
+      "people_positive_7day": 83,
+      "hospitalization_count_28day": 37,
+      "death_count_28day": 9
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11236,
+      "modzcta_name": "Canarsie",
+      "lat": 40.640004,
+      "lon": -73.901459,
+      "people_positive_7day": 88,
+      "hospitalization_count_28day": 32,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11237,
+      "modzcta_name": "Bushwick/East Williamsburg",
+      "lat": 40.704153000000005,
+      "lon": -73.92088299999999,
+      "people_positive_7day": 44,
+      "hospitalization_count_28day": 13,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11238,
+      "modzcta_name": "Clinton Hill/Prospect Heights",
+      "lat": 40.679179,
+      "lon": -73.96380400000001,
+      "people_positive_7day": 51,
+      "hospitalization_count_28day": 7,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11239,
+      "modzcta_name": "East New York",
+      "lat": 40.647529999999996,
+      "lon": -73.882398,
+      "people_positive_7day": 22,
+      "hospitalization_count_28day": 8,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11354,
+      "modzcta_name": "Flushing/Murray Hill",
+      "lat": 40.76863,
+      "lon": -73.827229,
+      "people_positive_7day": 54,
+      "hospitalization_count_28day": 12,
+      "death_count_28day": 6
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11355,
+      "modzcta_name": "Flushing/Murray Hill/Queensboro Hill",
+      "lat": 40.751459000000004,
+      "lon": -73.821014,
+      "people_positive_7day": 74,
+      "hospitalization_count_28day": 10,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11356,
+      "modzcta_name": "College Point",
+      "lat": 40.784867,
+      "lon": -73.841495,
+      "people_positive_7day": 27,
+      "hospitalization_count_28day": 3,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11357,
+      "modzcta_name": "Whitestone",
+      "lat": 40.786390000000004,
+      "lon": -73.810964,
+      "people_positive_7day": 37,
+      "hospitalization_count_28day": 6,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11358,
+      "modzcta_name": "Auburndale/Murray Hill",
+      "lat": 40.760475,
+      "lon": -73.79637,
+      "people_positive_7day": 24,
+      "hospitalization_count_28day": 4,
+      "death_count_28day": 6
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11360,
+      "modzcta_name": "Bayside (North)",
+      "lat": 40.78205,
+      "lon": -73.7808,
+      "people_positive_7day": 20,
+      "hospitalization_count_28day": 2,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11361,
+      "modzcta_name": "Bayside (North)/Bayside (South)",
+      "lat": 40.763748,
+      "lon": -73.772419,
+      "people_positive_7day": 22,
+      "hospitalization_count_28day": 6,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11362,
+      "modzcta_name": "Douglaston-Little Neck",
+      "lat": 40.756533000000005,
+      "lon": -73.736995,
+      "people_positive_7day": 13,
+      "hospitalization_count_28day": 3,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11363,
+      "modzcta_name": "Douglaston-Little Neck",
+      "lat": 40.772803,
+      "lon": -73.746444,
+      "people_positive_7day": 7,
+      "hospitalization_count_28day": 0,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11364,
+      "modzcta_name": "Bayside (South)/Oakland Gardens",
+      "lat": 40.745279,
+      "lon": -73.76057800000001,
+      "people_positive_7day": 27,
+      "hospitalization_count_28day": 6,
+      "death_count_28day": 5
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11365,
+      "modzcta_name": "Auburndale/Fresh Meadows/Pomonok/Utopia",
+      "lat": 40.739775,
+      "lon": -73.79480600000001,
+      "people_positive_7day": 43,
+      "hospitalization_count_28day": 7,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11366,
+      "modzcta_name": "Fresh Meadows/Hillcrest",
+      "lat": 40.728136,
+      "lon": -73.784981,
+      "people_positive_7day": 9,
+      "hospitalization_count_28day": 1,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11367,
+      "modzcta_name": "Kew Gardens Hills/Pomonok",
+      "lat": 40.730383,
+      "lon": -73.826297,
+      "people_positive_7day": 40,
+      "hospitalization_count_28day": 4,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11368,
+      "modzcta_name": "Corona/North Corona",
+      "lat": 40.749594,
+      "lon": -73.852604,
+      "people_positive_7day": 85,
+      "hospitalization_count_28day": 16,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11369,
+      "modzcta_name": "Airport/East Elmhurst",
+      "lat": 40.768944,
+      "lon": -73.872812,
+      "people_positive_7day": 26,
+      "hospitalization_count_28day": 10,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11370,
+      "modzcta_name": "Jackson Heights/Rikers Island",
+      "lat": 40.763465999999994,
+      "lon": -73.891021,
+      "people_positive_7day": 25,
+      "hospitalization_count_28day": 5,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11372,
+      "modzcta_name": "Jackson Heights",
+      "lat": 40.75169,
+      "lon": -73.883634,
+      "people_positive_7day": 68,
+      "hospitalization_count_28day": 15,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11373,
+      "modzcta_name": "Elmhurst",
+      "lat": 40.738823,
+      "lon": -73.8785,
+      "people_positive_7day": 107,
+      "hospitalization_count_28day": 18,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11374,
+      "modzcta_name": "Rego Park",
+      "lat": 40.726440999999994,
+      "lon": -73.861497,
+      "people_positive_7day": 55,
+      "hospitalization_count_28day": 5,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11375,
+      "modzcta_name": "Forest Hills",
+      "lat": 40.720931,
+      "lon": -73.846184,
+      "people_positive_7day": 71,
+      "hospitalization_count_28day": 11,
+      "death_count_28day": 5
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11377,
+      "modzcta_name": "Woodside",
+      "lat": 40.744823,
+      "lon": -73.90516,
+      "people_positive_7day": 94,
+      "hospitalization_count_28day": 17,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11378,
+      "modzcta_name": "Maspeth",
+      "lat": 40.724768,
+      "lon": -73.909399,
+      "people_positive_7day": 27,
+      "hospitalization_count_28day": 6,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11379,
+      "modzcta_name": "Middle Village",
+      "lat": 40.716758,
+      "lon": -73.879597,
+      "people_positive_7day": 54,
+      "hospitalization_count_28day": 4,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11385,
+      "modzcta_name": "Glendale/Ridgewood",
+      "lat": 40.701058,
+      "lon": -73.890159,
+      "people_positive_7day": 95,
+      "hospitalization_count_28day": 33,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11411,
+      "modzcta_name": "Cambria Heights",
+      "lat": 40.694202000000004,
+      "lon": -73.735998,
+      "people_positive_7day": 21,
+      "hospitalization_count_28day": 3,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11412,
+      "modzcta_name": "St. Albans",
+      "lat": 40.698095,
+      "lon": -73.758984,
+      "people_positive_7day": 39,
+      "hospitalization_count_28day": 6,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11413,
+      "modzcta_name": "Laurelton/Rosedale",
+      "lat": 40.669738,
+      "lon": -73.750842,
+      "people_positive_7day": 44,
+      "hospitalization_count_28day": 5,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11414,
+      "modzcta_name": "Hamilton Beach/Howard Beach/Lindenwood",
+      "lat": 40.658266,
+      "lon": -73.84490500000001,
+      "people_positive_7day": 18,
+      "hospitalization_count_28day": 6,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11415,
+      "modzcta_name": "Kew Gardens",
+      "lat": 40.708323,
+      "lon": -73.828212,
+      "people_positive_7day": 21,
+      "hospitalization_count_28day": 4,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11416,
+      "modzcta_name": "Ozone Park",
+      "lat": 40.684652,
+      "lon": -73.849549,
+      "people_positive_7day": 23,
+      "hospitalization_count_28day": 5,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11417,
+      "modzcta_name": "Ozone Park",
+      "lat": 40.676457,
+      "lon": -73.844522,
+      "people_positive_7day": 33,
+      "hospitalization_count_28day": 12,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11418,
+      "modzcta_name": "Richmond Hill",
+      "lat": 40.700236,
+      "lon": -73.836062,
+      "people_positive_7day": 52,
+      "hospitalization_count_28day": 12,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11419,
+      "modzcta_name": "Richmond Hill/South Ozone Park",
+      "lat": 40.688676,
+      "lon": -73.822901,
+      "people_positive_7day": 50,
+      "hospitalization_count_28day": 17,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11420,
+      "modzcta_name": "South Ozone Park",
+      "lat": 40.673518,
+      "lon": -73.817812,
+      "people_positive_7day": 43,
+      "hospitalization_count_28day": 10,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11421,
+      "modzcta_name": "Woodhaven",
+      "lat": 40.69405,
+      "lon": -73.85866999999999,
+      "people_positive_7day": 33,
+      "hospitalization_count_28day": 14,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11422,
+      "modzcta_name": "Rosedale",
+      "lat": 40.660819000000004,
+      "lon": -73.73608,
+      "people_positive_7day": 35,
+      "hospitalization_count_28day": 4,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11423,
+      "modzcta_name": "Hollis/Holliswood",
+      "lat": 40.714909999999996,
+      "lon": -73.767865,
+      "people_positive_7day": 20,
+      "hospitalization_count_28day": 10,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11426,
+      "modzcta_name": "Bellerose",
+      "lat": 40.736521,
+      "lon": -73.72238399999999,
+      "people_positive_7day": 25,
+      "hospitalization_count_28day": 3,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11427,
+      "modzcta_name": "Bellerose/Hollis Hills/Holliswood",
+      "lat": 40.730915,
+      "lon": -73.745611,
+      "people_positive_7day": 23,
+      "hospitalization_count_28day": 8,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11428,
+      "modzcta_name": "Queens Village",
+      "lat": 40.721015,
+      "lon": -73.74220600000001,
+      "people_positive_7day": 11,
+      "hospitalization_count_28day": 4,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11429,
+      "modzcta_name": "Queens Village",
+      "lat": 40.709771999999994,
+      "lon": -73.738731,
+      "people_positive_7day": 28,
+      "hospitalization_count_28day": 7,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11432,
+      "modzcta_name": "Hillcrest/Jamaica Estates/Jamaica Hills",
+      "lat": 40.715359,
+      "lon": -73.793064,
+      "people_positive_7day": 58,
+      "hospitalization_count_28day": 19,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11433,
+      "modzcta_name": "Jamaica",
+      "lat": 40.69823,
+      "lon": -73.787095,
+      "people_positive_7day": 31,
+      "hospitalization_count_28day": 9,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11434,
+      "modzcta_name": "Airport/South Jamaica/Springfield Gardens/St. Albans",
+      "lat": 40.656866,
+      "lon": -73.783386,
+      "people_positive_7day": 65,
+      "hospitalization_count_28day": 21,
+      "death_count_28day": 6
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11435,
+      "modzcta_name": "Briarwood/Jamaica",
+      "lat": 40.701291,
+      "lon": -73.809618,
+      "people_positive_7day": 52,
+      "hospitalization_count_28day": 17,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11436,
+      "modzcta_name": "South Jamaica/South Ozone Park",
+      "lat": 40.675819,
+      "lon": -73.79661800000001,
+      "people_positive_7day": 18,
+      "hospitalization_count_28day": 5,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11691,
+      "modzcta_name": "Edgemere/Far Rockaway",
+      "lat": 40.60133,
+      "lon": -73.76135699999999,
+      "people_positive_7day": 47,
+      "hospitalization_count_28day": 11,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11692,
+      "modzcta_name": "Arverne/Edgemere",
+      "lat": 40.592794,
+      "lon": -73.792203,
+      "people_positive_7day": 16,
+      "hospitalization_count_28day": 5,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11693,
+      "modzcta_name": "Arverne/Broad Channel",
+      "lat": 40.603699,
+      "lon": -73.821926,
+      "people_positive_7day": 15,
+      "hospitalization_count_28day": 2,
+      "death_count_28day": ""
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11694,
+      "modzcta_name": "Belle Harbor-Neponsit/Rockaway Park",
+      "lat": 40.577599,
+      "lon": -73.844553,
+      "people_positive_7day": 15,
+      "hospitalization_count_28day": 8,
+      "death_count_28day": 0
+    },
+    {
+      "type": "Feature",
+      "modzcta": 11697,
+      "modzcta_name": "Breezy Point",
+      "lat": 40.55907,
+      "lon": -73.907199,
+      "people_positive_7day": 3,
+      "hospitalization_count_28day": 2,
+      "death_count_28day": 0
+    }
+  ],
+
+  "type": "FeatureCollection"
+}
