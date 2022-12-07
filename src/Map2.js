@@ -5,6 +5,8 @@ import geoJson from "./testCenters2.json";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
 import * as turf from "@turf/turf";
+import covid from "./covidData2.json";
+import Papa from "papaparse";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoiZXRoYW5sYXZpbnNreTQ2IiwiYSI6ImNsOWZ4YzI5dTBkbnkzdm14ZGlwbzUwbTgifQ.jByzOogEAXnVPymbyXjj-Q";
@@ -15,8 +17,117 @@ stores.features.forEach(function (store, i) {
   store.properties.id = i;
 });
 
-const Map2 = () => {
-  var middle = [-73.98, 40.73];
+// Papa.parse(
+//   "https://raw.githubusercontent.com/nychealth/coronavirus-data/master/latest/hosp_death_last28days-by-modzcta.csv",
+//   {
+//     download: true,
+//     header: true,
+//     complete: function (results) {
+//       console.log(reuslts);
+//     },
+//   }
+// );
+
+// let testy = [];
+
+// const csvData = Papa.parse(
+//   "https://raw.githubusercontent.com/nychealth/coronavirus-data/master/latest/hosp_death_last28days-by-modzcta.csv",
+//   {
+//     download: true,
+//     header: true,
+//     complete: function (data) {
+//       results = data;
+//     },
+//   }
+// );
+
+// let testy = [];
+
+// function doStuff(teste) {
+//   //Data is usable here
+//   // console.log(teste);
+//   for (let i = 0; i < teste.length; i++) {
+//     testy.push({
+//       code: teste[i].ZIP.toString(),
+//       hdi: teste[i].hospitalization_count_28day,
+//     });
+//   }
+// }
+
+// function parseData(url, callBack) {
+//   Papa.parse(url, {
+//     header: true,
+//     download: true,
+//     header: true,
+//     complete: function (results) {
+//       callBack(results.data);
+//     },
+//   });
+// }
+
+// parseData(
+//   "https://raw.githubusercontent.com/nychealth/coronavirus-data/master/latest/hosp_death_last28days-by-modzcta.csv",
+//   doStuff
+// );
+
+// console.log(testy);
+
+let zips = [
+  10001, 10002, 10003, 10004, 10005, 10006, 10007, 10009, 10010, 10011, 10012,
+  10013, 10014, 10016, 10017, 10018, 10019, 10021, 10022, 10023, 10024, 10025,
+  10026, 10027, 10028, 10029, 10030, 10031, 10032, 10033, 10034, 10035, 10036,
+  10037, 10038, 10039, 10040, 10044, 10065, 10069, 10075, 10128, 10280, 10282,
+  10301, 10302, 10303, 10304, 10305, 10306, 10307, 10308, 10309, 10310, 10312,
+  10314, 10451, 10452, 10453, 10454, 10455, 10456, 10457, 10458, 10459, 10460,
+  10461, 10462, 10463, 10464, 10465, 10466, 10467, 10468, 10469, 10470, 10471,
+  10472, 10473, 10474, 10475, 11004, 11101, 11102, 11103, 11104, 11105, 11106,
+  11109, 11201, 11203, 11204, 11205, 11206, 11207, 11208, 11209, 11210, 11211,
+  11212, 11213, 11214, 11215, 11216, 11217, 11218, 11219, 11220, 11221, 11222,
+  11223, 11224, 11225, 11226, 11228, 11229, 11230, 11231, 11232, 11233, 11234,
+  11235, 11236, 11237, 11238, 11239, 11354, 11355, 11356, 11357, 11358, 11360,
+  11361, 11362, 11363, 11364, 11365, 11366, 11367, 11368, 11369, 11370, 11372,
+  11373, 11374, 11375, 11377, 11378, 11379, 11385, 11411, 11412, 11413, 11414,
+  11415, 11416, 11417, 11418, 11419, 11420, 11421, 11422, 11423, 11426, 11427,
+  11428, 11429, 11432, 11433, 11434, 11435, 11436, 11691, 11692, 11693, 11694,
+  11697,
+];
+let zipInput = 10009;
+let zip;
+
+for (let i = 0; i < zips.length; i++) {
+  if (zipInput == zips[i]) {
+    zip = i;
+  }
+}
+
+let data = [];
+let data2 = [];
+let data3 = [];
+
+for (let i = 0; i < covid.length; i++) {
+  data.push({
+    code: covid[i].ZIP.toString(),
+    hosp: covid[i].hospitalization_count_28day,
+  });
+}
+
+for (let i = 0; i < covid.length; i++) {
+  data2.push({
+    code: covid[i].ZIP.toString(),
+    pos: covid[i].people_positive_7day,
+  });
+}
+
+for (let i = 0; i < covid.length; i++) {
+  data3.push({
+    code: covid[i].ZIP.toString(),
+    death: covid[i].death_count_28day,
+  });
+}
+// console.log(data);
+
+const Map = () => {
+  var middle = [covid[zip].lon, covid[zip].lat];
   const mapContainerRef = useRef(null);
 
   // Initialize map when component mounts
@@ -25,8 +136,20 @@ const Map2 = () => {
       container: mapContainerRef.current,
       style: "mapbox://styles/ethanlavinsky46/cla93j7p1000j14pa6sblzm26",
       center: middle,
-      zoom: 13,
+      zoom: 15,
     });
+
+    // disable map rotation using right click + drag
+    map.dragRotate.disable();
+
+    // disable map rotation using touch rotation gesture
+    map.touchZoomRotate.disableRotation();
+
+    // const data = [
+    //   { code: "10002", hdi: 0.811 },
+    //   { code: "10001", hdi: 0.816 },
+    //   { code: "10009", hdi: 0.787 },
+    // ];
 
     map.on("load", () => {
       function addMarkers() {
@@ -79,25 +202,124 @@ const Map2 = () => {
         bbox: [-75.063812, 40.336768, -72.977783, 41.121429], // Set the bounding box coordinates
       });
 
-      map.addControl(geocoder, "top-left");
+      // map.addControl(geocoder, "top-left");
 
       addMarkers();
 
       map.addSource("zips", {
         type: "vector",
-        url: "mapbox://ethanlavinsky46.bozah4t4",
+        url: "mapbox://ethanlavinsky46.c5dqzdw0",
       });
 
-      map.addLayer({
-        id: "zip-fill-test",
-        type: "fill",
-        source: "zips",
-        "source-layer": "nyu-2451-34509-geojson-58hf5f",
-        paint: {
-          "fill-color": "#FFF",
-          "fill-opacity": 0.5,
+      // Build a GL match expression that defines the color for every vector tile feature
+      // Use the ISO 3166-1 alpha 3 code as the lookup key for the country shape
+      const matchExpression = ["match", ["get", "ZIP"]];
+      const matchExpression2 = ["match", ["get", "ZIP"]];
+      const matchExpression3 = ["match", ["get", "ZIP"]];
+
+      // Calculate color values for each country based on 'hdi' value
+      for (const row of data) {
+        // Convert the range of data values to a suitable color
+        const green = (row["hosp"] / 50) * 255;
+        const color = `rgb(0, ${green}, 0)`;
+
+        matchExpression.push(row["code"], color);
+      }
+
+      // Last value is the default, used where there is no data
+      matchExpression.push("rgba(0, 0, 0, 0)");
+
+      // Calculate color values for each country based on 'hdi' value
+      for (const row of data2) {
+        // Convert the range of data values to a suitable color
+        const red = (row["pos"] / 130) * 255;
+        const color2 = `rgb( ${red},0, 0)`;
+
+        matchExpression2.push(row["code"], color2);
+      }
+
+      // Last value is the default, used where there is no data
+      matchExpression2.push("rgba(0, 0, 0, 0)");
+
+      // Calculate color values for each country based on 'hdi' value
+      for (const row of data3) {
+        // Convert the range of data values to a suitable color
+        const blue = (row["death"] / 9) * 255;
+        const color2 = `rgb( 0,0, ${blue})`;
+
+        matchExpression3.push(row["code"], color2);
+      }
+
+      // Last value is the default, used where there is no data
+      matchExpression3.push("rgba(0, 0, 0, 0)");
+
+      // map.addLayer({
+      //   id: "zip-fill-test",
+      //   type: "fill",
+      //   source: "zips",
+      //   "source-layer": "nyc-zip-code-7b06h0",
+      //   paint: {
+      //     "fill-color": "#FFF",
+      //     "fill-opacity": 0.5,
+      //   },
+      // });
+
+      map.addLayer(
+        {
+          id: "hospFill",
+          type: "fill",
+          source: "zips",
+          "source-layer": "nyc-zip-code-7b06h0",
+          paint: {
+            "fill-color": matchExpression,
+            "fill-opacity": 0.75,
+          },
         },
-      });
+        "admin-1-boundary-bg"
+      );
+
+      map.addLayer(
+        {
+          id: "posFill",
+          type: "fill",
+          source: "zips",
+          "source-layer": "nyc-zip-code-7b06h0",
+          paint: {
+            "fill-color": matchExpression2,
+            "fill-opacity": 0.75,
+          },
+        },
+        "admin-1-boundary-bg"
+      );
+
+      map.addLayer(
+        {
+          id: "deathFill",
+          type: "fill",
+          source: "zips",
+          "source-layer": "nyc-zip-code-7b06h0",
+          paint: {
+            "fill-color": matchExpression3,
+            "fill-opacity": 0.5,
+          },
+        },
+        "admin-1-boundary-bg"
+      );
+
+      // map.addLayer({
+      //   id: "zip-lines",
+      //   type: "line",
+      //   source: "zips",
+      //   "source-layer": "nyc-zip-code-7b06h0",
+      //   layout: {
+      //     "line-join": "round",
+      //     "line-cap": "round",
+      //   },
+      //   paint: {
+      //     "line-color": "#ff69b4",
+      //     "line-width": 1,
+      //   },
+      // });
 
       map.on("click", (event) => {
         /* Determine if a feature in the "locations" layer exists at that point. */
@@ -129,24 +351,9 @@ const Map2 = () => {
 
       buildLocationList(stores);
 
-      map.addLayer({
-        id: "zip-lines",
-        type: "line",
-        source: "zips",
-        "source-layer": "nyu-2451-34509-geojson-58hf5f",
-        layout: {
-          "line-join": "round",
-          "line-cap": "round",
-        },
-        paint: {
-          "line-color": "#ff69b4",
-          "line-width": 1,
-        },
-      });
-
       function fisrt() {}
 
-      // geocoder.on("result", () => {
+      // geocoder.on("result", (event) => {
       const searchResult = middle;
       // const searchResult = event.result.geometry;
       const options = { units: "miles" };
@@ -188,7 +395,7 @@ const Map2 = () => {
     function flyToStore(currentFeature) {
       map.flyTo({
         center: currentFeature.geometry.coordinates,
-        zoom: 14,
+        zoom: 15.5,
       });
     }
 
@@ -200,7 +407,7 @@ const Map2 = () => {
       const popup = new mapboxgl.Popup({ closeOnClick: false })
         .setLngLat(currentFeature.geometry.coordinates)
         .setHTML(
-          `<h3><a href = "${currentFeature.Web}">${currentFeature.properties.Name}</a></h3><h4>${currentFeature.properties.Address}</h4><h4>${currentFeature.properties.Hours}</h4>`
+          `<h3><a href = "${currentFeature.Web}">${currentFeature.properties.Name}</a></h3><h4>${currentFeature.properties.Address}</h4><h4>${currentFeature.properties.Hours}</h4><img src="https://cdn.discordapp.com/attachments/729413416774664332/1050105121415110766/web-link.png">`
         )
         .addTo(map);
     }
@@ -232,6 +439,9 @@ const Map2 = () => {
           const roundedDistance =
             Math.round(store.properties.distance * 100) / 100;
           details.innerHTML += `<div><strong>${roundedDistance} miles away</strong></div>`;
+        }
+        if (store.Web) {
+          details.innerHTML += `<a href=" ${store.Web}"><img src="https://cdn.discordapp.com/attachments/729413416774664332/1050105121415110766/web-link.png"></a>`;
         }
 
         link.addEventListener("click", function () {
@@ -283,10 +493,66 @@ const Map2 = () => {
       ];
     }
 
+    // After the last frame rendered before the map enters an "idle" state.
+    map.on("idle", () => {
+      // If these two layers were not added to the map, abort
+      if (
+        !map.getLayer("hospFill") ||
+        !map.getLayer("posFill") ||
+        !map.getLayer("deathFill")
+      ) {
+        return;
+      }
+
+      // Enumerate ids of the layers.
+      const toggleableLayerIds = ["hospFill", "posFill", "deathFill"];
+
+      // Set up the corresponding toggle button for each layer.
+      for (const id of toggleableLayerIds) {
+        // Skip layers that already have a button set up.
+        if (document.getElementById(id)) {
+          continue;
+        }
+
+        // Create a link.
+        const link = document.createElement("a");
+        link.id = id;
+        link.href = "#";
+        link.textContent = id;
+        link.className = "";
+
+        // Show or hide layer when the toggle is clicked.
+        link.onclick = function (e) {
+          const clickedLayer = this.textContent;
+          e.preventDefault();
+          e.stopPropagation();
+
+          const visibility = map.getLayoutProperty(clickedLayer, "visibility");
+          // map.setLayoutProperty("hospFill", "visibility", "none");
+
+          // Toggle layer visibility by changing the layout object's visibility property.
+          if (visibility === "visible") {
+            map.setLayoutProperty(clickedLayer, "visibility", "none");
+            this.className = "";
+          } else {
+            this.className = "active";
+            map.setLayoutProperty(clickedLayer, "visibility", "visible");
+          }
+        };
+
+        const layers = document.getElementById("menu");
+        layers.appendChild(link);
+      }
+    });
+
     return () => map.remove();
   }, []);
 
-  return <div className="map-container" ref={mapContainerRef} />;
+  return (
+    <div>
+      <div className="map-container" ref={mapContainerRef} />
+    </div>
+  );
 };
 
-export default Map2;
+export default Map;
