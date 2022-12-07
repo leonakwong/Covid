@@ -35,7 +35,6 @@ body {
   max-width: 400px;
   font: 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
-
 .mapboxgl-popup {
   max-width: 400px;
   font: 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -60,7 +59,7 @@ body {
 
 .listings .item .title {
   display: block;
-  color: #00853e;
+  color: #055ba1;
   font-weight: 700;
 }
 
@@ -70,7 +69,7 @@ body {
 
 .listings .item.active .title,
 .listings .item .title:hover {
-  color: #8cc63f;
+  color: #51b6da;
 }
 
 .listings .item.active {
@@ -89,7 +88,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #00853e;
+  background: #437df2;
   border-radius: 0;
 }
 
@@ -108,7 +107,7 @@ a {
 }
 
 .mapboxgl-popup-content h3 {
-  background: #91c949;
+  background: #437df2;
   color: #fff;
   margin: 0;
   padding: 10px;
@@ -132,7 +131,7 @@ a {
 }
 
 .mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
-  border-bottom-color: #91c949;
+  border-bottom-color: #2c7cde;
 }
 
 .marker {
