@@ -12,6 +12,7 @@ import Home from './Home';
 import FindVaccine from './FindVaccine';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import SideBar from './sidebar';
+import SideBar2 from './sidebar2';
 import DataComponent from './Data.tsx';
 
 
@@ -24,7 +25,8 @@ function App() {
       </div>
       <BrowserRouter>
         <div className="App">
-          <Navbar fixed='top' bg='myBlue' variant="dark">
+          <div>
+          <Navbar fixed='top' bg='myBlue' variant="dark" className="sticky-nav">
             <Navbar.Brand> Project Hygieia </Navbar.Brand>
             <Nav>
               <Nav.Link as={Link} to="/App">Home</Nav.Link>
@@ -32,9 +34,10 @@ function App() {
               <Nav.Link as={Link} to="/NewsList">News</Nav.Link>
               <Nav.Link as={Link} to="/Data">Data Visualized</Nav.Link>
               <Nav.Link as={Link} to="/Vaccine">Vaccine Map</Nav.Link>
-              <Nav.Link as={Link} to="/Map2">Test Center Map</Nav.Link>
+              <Nav.Link as={Link} to="/RapidTesting">Test Center Map</Nav.Link>
             </Nav>
           </Navbar>
+          </div>
           <div>
             <Routes>
               <Route path="/App" element={<Home />} />
@@ -42,8 +45,8 @@ function App() {
               <Route path="/NewsList" element={<NewsList />} />
               <Route path="/Vaccine" element={<SideBar />} />
               <Route path="/Vaccine/:zipcode" element={<SideBar />} />
-              <Route path="/Map2" element={<Map2 />} />
-              <Route path="/Map2/:zipcode" element={<Map2 />} />
+              <Route path="/RapidTesting" element={<SideBar2 />} />
+              <Route path="/RapidTesting/:zipcode" element={<SideBar2 />} />
               <Route path="/Data" element={<DataComponent />} />
             </Routes>
           </div>

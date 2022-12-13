@@ -1,8 +1,8 @@
 import React from "react";
-import Map from "./Map";
+import Map from "./Map2";
 import "./App.css";
 
-function SideBar() {
+function SideBar2() {
   const [data, setData] = React.useState(null);
 
   // React.useEffect(() => {
@@ -15,9 +15,9 @@ function SideBar() {
     <div>
       <>
         <link href="style.css" rel="stylesheet" />
-        <nav id="menu"></nav>
 
         <div className="side">
+          <nav id="menu"></nav>
           <div className="heading">
             <h1>Our locations</h1>
           </div>
@@ -31,4 +31,4 @@ function SideBar() {
   );
 }
 
-export default SideBar;
+export default SideBar2;

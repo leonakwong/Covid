@@ -86,6 +86,8 @@ let zips = [
 ];
 let zip = 1000;
 
+let covdata = {};
+
 function FindVaccine() {
   const [data, setData] = React.useState(null);
   const navigate = useNavigate();
@@ -101,22 +103,12 @@ function FindVaccine() {
 
   const alertResults = useCallback((sender) => {
     const results = JSON.stringify(sender.data);
-    const zipNum = Number(sender.data.zipcode);
-      for (let i = 0; i < zips.length; i++) {
-        if (zipNum === zips[i]) {
-          zip = i;
-        }
-      }
-      if (zip == 1000){
-        alert("Enter a zipcode in the New York City area.");
-        navigate("/FindLocations");
-      }
     switch (sender.data.service) {
       case "Vaccine":
         navigate("/Vaccine/" + sender.data.zipcode);
         break;
       case "Rapid Testing":
-        navigate("/Vaccine/" + sender.data.zipcode);
+        navigate("/RapidTesting/" + sender.data.zipcode);
         break;
       default:
       // code block
@@ -129,12 +121,29 @@ function FindVaccine() {
         header: true,
         complete: function (results) {
           console.log(results);
+          covdata = results.data;
+          console.log(covdata);
         },
       }
     );
   }, []);
 
+  const stopComplete = useCallback((sender, options) => {
+    const results = JSON.stringify(sender.data);
+    const zipNum = Number(sender.data.zipcode);
+    for (let i = 0; i < zips.length; i++) {
+      if (zipNum === zips[i]) {
+        zip = i;
+      }
+    }
+    if (zip == 1000){
+      alert("Enter a zipcode in the New York City area.");
+      options.allowComplete = false;
+    }
+  },[]);
+
   survey.onComplete.add(alertResults);
+  survey.onCompleting.add(stopComplete);
 
   return (
     <>

@@ -441,7 +441,7 @@ const Map = () => {
           details.innerHTML += `<div><strong>${roundedDistance} miles away</strong></div>`;
         }
         if (store.Web) {
-          details.innerHTML += `<a href=" ${store.Web}"><img src="https://cdn.discordapp.com/attachments/729413416774664332/1050105121415110766/web-link.png"></a>`;
+          details.innerHTML += `<a href=" ${store.Web}"><img src="https://w7.pngwing.com/pngs/928/420/png-transparent-web-development-symbol-world-wide-web-web-design-text-logo.png"></a>`;
         }
 
         link.addEventListener("click", function () {
