@@ -6,8 +6,17 @@ import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
 import * as turf from "@turf/turf";
 import covid from "./covidData2.json";
-import Papa from "papaparse";
 import { useParams } from "react-router-dom";
+
+<>
+  <div className="side">
+    <div className="heading">
+      <h1>Our locations</h1>
+    </div>
+    <div id="listings" className="listings" />
+  </div>
+  <div id="map" className="map" />
+</>;
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoiZXRoYW5sYXZpbnNreTQ2IiwiYSI6ImNsOWZ4YzI5dTBkbnkzdm14ZGlwbzUwbTgifQ.jByzOogEAXnVPymbyXjj-Q";
@@ -17,61 +26,6 @@ const stores = geoJson;
 stores.features.forEach(function (store, i) {
   store.properties.id = i;
 });
-
-// Papa.parse(
-//   "https://raw.githubusercontent.com/nychealth/coronavirus-data/master/latest/hosp_death_last28days-by-modzcta.csv",
-//   {
-//     download: true,
-//     header: true,
-//     complete: function (results) {
-//       console.log(reuslts);
-//     },
-//   }
-// );
-
-// let testy = [];
-
-// const csvData = Papa.parse(
-//   "https://raw.githubusercontent.com/nychealth/coronavirus-data/master/latest/hosp_death_last28days-by-modzcta.csv",
-//   {
-//     download: true,
-//     header: true,
-//     complete: function (data) {
-//       results = data;
-//     },
-//   }
-// );
-
-// let testy = [];
-
-// function doStuff(teste) {
-//   //Data is usable here
-//   // console.log(teste);
-//   for (let i = 0; i < teste.length; i++) {
-//     testy.push({
-//       code: teste[i].ZIP.toString(),
-//       hdi: teste[i].hospitalization_count_28day,
-//     });
-//   }
-// }
-
-// function parseData(url, callBack) {
-//   Papa.parse(url, {
-//     header: true,
-//     download: true,
-//     header: true,
-//     complete: function (results) {
-//       callBack(results.data);
-//     },
-//   });
-// }
-
-// parseData(
-//   "https://raw.githubusercontent.com/nychealth/coronavirus-data/master/latest/hosp_death_last28days-by-modzcta.csv",
-//   doStuff
-// );
-
-// console.log(testy);
 
 let zips = [
   10001, 10002, 10003, 10004, 10005, 10006, 10007, 10009, 10010, 10011, 10012,
@@ -92,7 +46,7 @@ let zips = [
   11428, 11429, 11432, 11433, 11434, 11435, 11436, 11691, 11692, 11693, 11694,
   11697,
 ];
-let zipInput = 10065;
+let zipInput = 11212;
 let zip;
 
 for (let i = 0; i < zips.length; i++) {
@@ -102,30 +56,14 @@ for (let i = 0; i < zips.length; i++) {
 }
 
 let data = [];
-let data2 = [];
-let data3 = [];
 
 for (let i = 0; i < covid.length; i++) {
   data.push({
     code: covid[i].ZIP.toString(),
-    hosp: covid[i].hospitalization_count_28day,
+    hdi: covid[i].hospitalization_count_28day,
   });
 }
-
-for (let i = 0; i < covid.length; i++) {
-  data2.push({
-    code: covid[i].ZIP.toString(),
-    pos: covid[i].people_positive_7day,
-  });
-}
-
-for (let i = 0; i < covid.length; i++) {
-  data3.push({
-    code: covid[i].ZIP.toString(),
-    death: covid[i].death_count_28day,
-  });
-}
-// console.log(data);
+console.log(data);
 
 const Map = () => {
   const params = useParams();
@@ -227,13 +165,11 @@ const Map = () => {
       // Build a GL match expression that defines the color for every vector tile feature
       // Use the ISO 3166-1 alpha 3 code as the lookup key for the country shape
       const matchExpression = ["match", ["get", "ZIP"]];
-      const matchExpression2 = ["match", ["get", "ZIP"]];
-      const matchExpression3 = ["match", ["get", "ZIP"]];
 
       // Calculate color values for each country based on 'hdi' value
       for (const row of data) {
         // Convert the range of data values to a suitable color
-        const green = (row["hosp"] / 50) * 255;
+        const green = (row["hdi"] / 40) * 255;
         const color = `rgb(0, ${green}, 0)`;
 
         matchExpression.push(row["code"], color);
@@ -241,30 +177,6 @@ const Map = () => {
 
       // Last value is the default, used where there is no data
       matchExpression.push("rgba(0, 0, 0, 0)");
-
-      // Calculate color values for each country based on 'hdi' value
-      for (const row of data2) {
-        // Convert the range of data values to a suitable color
-        const red = (row["pos"] / 130) * 255;
-        const color2 = `rgb( ${red},0, 0)`;
-
-        matchExpression2.push(row["code"], color2);
-      }
-
-      // Last value is the default, used where there is no data
-      matchExpression2.push("rgba(0, 0, 0, 0)");
-
-      // Calculate color values for each country based on 'hdi' value
-      for (const row of data3) {
-        // Convert the range of data values to a suitable color
-        const blue = (row["death"] / 9) * 255;
-        const color2 = `rgb( 0,0, ${blue})`;
-
-        matchExpression3.push(row["code"], color2);
-      }
-
-      // Last value is the default, used where there is no data
-      matchExpression3.push("rgba(0, 0, 0, 0)");
 
       // map.addLayer({
       //   id: "zip-fill-test",
@@ -279,14 +191,10 @@ const Map = () => {
 
       map.addLayer(
         {
-          id: "hospFill",
+          id: "join",
           type: "fill",
           source: "zips",
           "source-layer": "nyc-zip-code-7b06h0",
-          'layout': {
-            // make layer invisible by default
-            'visibility': 'none'
-          },
           paint: {
             "fill-color": matchExpression,
             "fill-opacity": 0.75,
@@ -295,56 +203,20 @@ const Map = () => {
         "admin-1-boundary-bg"
       );
 
-      map.addLayer(
-        {
-          id: "posFill",
-          type: "fill",
-          source: "zips",
-          "source-layer": "nyc-zip-code-7b06h0",
-          'layout': {
-            // make layer invisible by default
-            'visibility': 'none',
-          },
-          paint: {
-            "fill-color": matchExpression2,
-            "fill-opacity": 0.75,
-          },
+      map.addLayer({
+        id: "zip-lines",
+        type: "line",
+        source: "zips",
+        "source-layer": "nyc-zip-code-7b06h0",
+        layout: {
+          "line-join": "round",
+          "line-cap": "round",
         },
-        "admin-1-boundary-bg"
-      );
-
-      map.addLayer(
-        {
-          id: "deathFill",
-          type: "fill",
-          source: "zips",
-          "source-layer": "nyc-zip-code-7b06h0",
-          'layout': {
-            // make layer invisible by default
-            'visibility': 'none'
-          },
-          paint: {
-            "fill-color": matchExpression3,
-            "fill-opacity": 0.5,
-          },
+        paint: {
+          "line-color": "#ff69b4",
+          "line-width": 1,
         },
-        "admin-1-boundary-bg"
-      );
-
-      // map.addLayer({
-      //   id: "zip-lines",
-      //   type: "line",
-      //   source: "zips",
-      //   "source-layer": "nyc-zip-code-7b06h0",
-      //   layout: {
-      //     "line-join": "round",
-      //     "line-cap": "round",
-      //   },
-      //   paint: {
-      //     "line-color": "#ff69b4",
-      //     "line-width": 1,
-      //   },
-      // });
+      });
 
       map.on("click", (event) => {
         /* Determine if a feature in the "locations" layer exists at that point. */
@@ -423,27 +295,18 @@ const Map = () => {
         zoom: 15.5,
       });
     }
-    
+
     function createPopUp(currentFeature) {
       const popUps = document.getElementsByClassName("mapboxgl-popup");
       /** Check if there is already a popup on the map and if so, remove it */
       if (popUps[0]) popUps[0].remove();
-      if (!currentFeature.properties.web_address) {
-        const popup = new mapboxgl.Popup({ closeOnClick: false })
-        .setLngLat(currentFeature.geometry.coordinates)
-        .setHTML(
-          `<h3>${currentFeature.properties.loc_name}</h3><h4>${currentFeature.properties.loc_admin_street1}, ${currentFeature.properties.loc_admin_city}, ${currentFeature.properties.loc_admin_state}, ${currentFeature.properties.loc_admin_zip}</h4><h4>${currentFeature.properties.loc_phone}</h4>`
-        )
-        .addTo(map);
-      }
-      if (currentFeature.properties.web_address){
-        const popup = new mapboxgl.Popup({ closeOnClick: false })
+
+      const popup = new mapboxgl.Popup({ closeOnClick: false })
         .setLngLat(currentFeature.geometry.coordinates)
         .setHTML(
           `<h3><a href = "${currentFeature.properties.web_address}">${currentFeature.properties.loc_name}</a></h3><h4>${currentFeature.properties.loc_admin_street1}, ${currentFeature.properties.loc_admin_city}, ${currentFeature.properties.loc_admin_state}, ${currentFeature.properties.loc_admin_zip}</h4><h4>${currentFeature.properties.loc_phone}</h4>`
         )
         .addTo(map);
-      }
     }
 
     function buildLocationList(stores) {
@@ -466,20 +329,13 @@ const Map = () => {
         /* Add details to the individual listing. */
         const details = listing.appendChild(document.createElement("div"));
         // details.innerHTML = `${store.properties.Borough}`;
-        if (store.properties.loc_admin_street1) {
+        if (store.properties.loc_phone) {
           details.innerHTML += `  ${store.properties.loc_admin_street1}`;
         }
         if (store.properties.distance) {
           const roundedDistance =
             Math.round(store.properties.distance * 100) / 100;
           details.innerHTML += `<div><strong>${roundedDistance} miles away</strong></div>`;
-        }
-        if (store.properties.web_address) {
-          details.innerHTML += `<a href=" ${store.properties.web_address}"><img src="https://toppng.com/uploads/preview/web-png-jpg-transparent-stock-website-icon-blue-11563644926reanjnmk6x.png" width = "25" height = "25"></a>`;
-        }
-        if (store.properties.loc_phone) {
-          details.innerHTML += ` <a href="tel:${store.loc_phone}"><img src = "https://www.freeiconspng.com/uploads/phone-png-3.png" width = "25" height = "25"></a>`; 
-
         }
 
         link.addEventListener("click", function () {
@@ -531,66 +387,19 @@ const Map = () => {
       ];
     }
 
-    // After the last frame rendered before the map enters an "idle" state.
-    map.on("idle", () => {
-      // If these two layers were not added to the map, abort
-      if (
-        !map.getLayer("hospFill") ||
-        !map.getLayer("posFill") ||
-        !map.getLayer("deathFill")
-      ) {
-        return;
-      }
-
-      // Enumerate ids of the layers.
-      const toggleableLayerIds = ["hospFill", "posFill", "deathFill"];
-
-      // Set up the corresponding toggle button for each layer.
-      for (const id of toggleableLayerIds) {
-        // Skip layers that already have a button set up.
-        if (document.getElementById(id)) {
-          continue;
-        }
-
-        // Create a link.
-        const link = document.createElement("a");
-        link.id = id;
-        link.href = "#";
-        link.textContent = id;
-        link.className = "";
-
-        // Show or hide layer when the toggle is clicked.
-        link.onclick = function (e) {
-          const clickedLayer = this.textContent;
-          e.preventDefault();
-          e.stopPropagation();
-
-          const visibility = map.getLayoutProperty(clickedLayer, "visibility");
-          for (var i = 0; i < toggleableLayerIds.length; i++){
-            if (clickedLayer === toggleableLayerIds[i]) {
-              layers.children[i].className = 'active';
-              map.setLayoutProperty(toggleableLayerIds[i], 'visibility', 'visible');
-            }
-            else {
-              layers.children[i].className = '';
-              map.setLayoutProperty(toggleableLayerIds[i], 'visibility', 'none');
-            }
-          }
-        };
-
-        const layers = document.getElementById("menu");
-        layers.appendChild(link);
-      }
-    });
-
     return () => map.remove();
   }, []);
 
-  return (
-    <div>
-      <div className="map-container" ref={mapContainerRef} />
-    </div>
-  );
+  return <div className="map-container" ref={mapContainerRef} />;
 };
+
+<>
+  <div className="side">
+    <div className="heading">
+      <h1>Our locations</h1>
+    </div>
+  </div>
+  <div id="listings" className="listings" />
+</>;
 
 export default Map;

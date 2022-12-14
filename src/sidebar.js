@@ -15,10 +15,9 @@ function SideBar() {
     <div>
       <>
         <link href="style.css" rel="stylesheet" />
-        <nav id="menu"></nav>
-
         <div className="side">
           <div className="heading">
+            <br></br>
             <h1>Our locations</h1>
           </div>
           <div id="listings" className="listings" />
