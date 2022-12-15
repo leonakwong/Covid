@@ -1,1043 +1,1043 @@
 {
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 1,
-        "Name": "Bellevue Hospital Center",
-        "Address": "462 First Avenue",
-        "Borough": "Manhattan",
-        "Zip": 10016,
-        "PhoneNumber": "(212) 562-4132",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.nychealthandhospitals.org/locations/bellevue/"
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 1,
+          "Name": "Bellevue Hospital Center",
+          "Address": "462 First Avenue",
+          "Borough": "Manhattan",
+          "Zip": 10016,
+          "PhoneNumber": "(212) 562-4132",
+          "COVID Mortality Rate": "16.2%",
+          "Website": "https://www.nychealthandhospitals.org/locations/bellevue/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.976233204154, 40.739928939053634]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.976233204154, 40.739928939053634]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 2,
-        "Name": "BronxCare Hospital Center",
-        "Address": "1650 Grand Concourse",
-        "Borough": "Bronx",
-        "Zip": 10457,
-        "PhoneNumber": "(718) 901-8800",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.bronxcare.org/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 2,
+          "Name": "BronxCare Hospital Center",
+          "Address": "1650 Grand Concourse",
+          "Borough": "Bronx",
+          "Zip": 10457,
+          "PhoneNumber": "(718) 901-8800",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.bronxcare.org/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.91102615777817, 40.8436135735445]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.91102615777817, 40.8436135735445]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 3,
-        "Name": "BronxCare Hospital Center",
-        "Address": "1276 Fulton Avenue",
-        "Borough": "Bronx",
-        "Zip": 10456,
-        "PhoneNumber": "(718) 901-8800",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.bronxcare.org/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 3,
+          "Name": "BronxCare Hospital Center",
+          "Address": "1276 Fulton Avenue",
+          "Borough": "Bronx",
+          "Zip": 10456,
+          "PhoneNumber": "(718) 901-8800",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.bronxcare.org/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.90281933079824, 40.831562389272435]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.90281933079824, 40.831562389272435]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 4,
-        "Name": "Brookdale Hospital Medical Center",
-        "Address": "1 Brookdale Plaza",
-        "Borough": "Brooklyn",
-        "Zip": 11212,
-        "PhoneNumber": "(718) 240-5276",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.nyconnects.ny.gov/providers/brookdale-hospital-medical-center-omh-ag-86040"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 4,
+          "Name": "Brookdale Hospital Medical Center",
+          "Address": "1 Brookdale Plaza",
+          "Borough": "Brooklyn",
+          "Zip": 11212,
+          "PhoneNumber": "(718) 240-5276",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.nyconnects.ny.gov/providers/brookdale-hospital-medical-center-omh-ag-86040"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.91270783076918, 40.65506782779276]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.91270783076918, 40.65506782779276]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 5,
-        "Name": "Brooklyn Hospital Center - Downtown Campus",
-        "Address": "121 Dekalb Avenue",
-        "Borough": "Brooklyn",
-        "Zip": 11201,
-        "PhoneNumber": "(718) 250-8000",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.tbh.org/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 5,
+          "Name": "Brooklyn Hospital Center - Downtown Campus",
+          "Address": "121 Dekalb Avenue",
+          "Borough": "Brooklyn",
+          "Zip": 11201,
+          "PhoneNumber": "(718) 250-8000",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.tbh.org/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.9777743019326, 40.69146835315802]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.9777743019326, 40.69146835315802]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 6,
-        "Name": "Calvary Hospital - Brookyln Campus",
-        "Address": "150 55th Street",
-        "Borough": "Brooklyn",
-        "Zip": 11220,
-        "PhoneNumber": "(718)630-6666",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.calvaryhospital.org/calvary-hospital-update-on-covid-19/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 6,
+          "Name": "Calvary Hospital - Brookyln Campus",
+          "Address": "150 55th Street",
+          "Borough": "Brooklyn",
+          "Zip": 11220,
+          "PhoneNumber": "(718)630-6666",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.calvaryhospital.org/calvary-hospital-update-on-covid-19/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-74.02091277309817, 40.64679362574208]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-74.02091277309817, 40.64679362574208]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 7,
-        "Name": "Calvery Hospital",
-        "Address": "1740-70 Eastchester Road",
-        "Borough": "Bronx",
-        "Zip": 10461,
-        "PhoneNumber": "(718) 518-2244",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.calvaryhospital.org/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 7,
+          "Name": "Calvery Hospital",
+          "Address": "1740-70 Eastchester Road",
+          "Borough": "Bronx",
+          "Zip": 10461,
+          "PhoneNumber": "(718) 518-2244",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.calvaryhospital.org/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.84383831542128, 40.84828865794997]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.84383831542128, 40.84828865794997]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 8,
-        "Name": "Coney Island Hospital",
-        "Address": "2601 Ocean Parkway",
-        "Borough": "Brooklyn",
-        "Zip": 11235,
-        "PhoneNumber": "(718) 616-3000",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.nychealthandhospitals.org/locations/coney-island/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 8,
+          "Name": "Coney Island Hospital",
+          "Address": "2601 Ocean Parkway",
+          "Borough": "Brooklyn",
+          "Zip": 11235,
+          "PhoneNumber": "(718) 616-3000",
+          "COVID Mortality Rate": "33.7%",
+          "Website": "https://www.nychealthandhospitals.org/locations/coney-island/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.9654283154286, 40.58526802487829]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.9654283154286, 40.58526802487829]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 9,
-        "Name": "David H. Koch Center For Cancer Care",
-        "Address": "530 East 74th Street",
-        "Borough": "Manhattan",
-        "Zip": 10021,
-        "PhoneNumber": "(212)639-2000",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.mskcc.org/locations/directory/david-koch-center-cancer-care-at-msk?utm_source=yext&utm_medium=local&utm_content=gmb"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 9,
+          "Name": "David H. Koch Center For Cancer Care",
+          "Address": "530 East 74th Street",
+          "Borough": "Manhattan",
+          "Zip": 10021,
+          "PhoneNumber": "(212)639-2000",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.mskcc.org/locations/directory/david-koch-center-cancer-care-at-msk?utm_source=yext&utm_medium=local&utm_content=gmb"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.95084325960174, 40.76733834432183]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.95084325960174, 40.76733834432183]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 10,
-        "Name": "Elmhurst Hospital Center",
-        "Address": "79-01 Broadway",
-        "Borough": "Queens",
-        "Zip": 11373,
-        "PhoneNumber": "(718) 334-4000",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.nychealthandhospitals.org/locations/elmhurst/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 10,
+          "Name": "Elmhurst Hospital Center",
+          "Address": "79-01 Broadway",
+          "Borough": "Queens",
+          "Zip": 11373,
+          "PhoneNumber": "(718) 334-4000",
+          "COVID Mortality Rate": "23.9%",
+          "Website": "https://www.nychealthandhospitals.org/locations/elmhurst/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.8854041926837, 40.74529271717261]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.8854041926837, 40.74529271717261]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 11,
-        "Name": "Flushing Hospital Medical Center",
-        "Address": "45th Avenue & Parsons Blvd",
-        "Borough": "Queens",
-        "Zip": 11355,
-        "PhoneNumber": "(718) 670-5918",
-        "COVID Mortality Rate": "",
-        "Website": "https://flushinghospital.org/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 11,
+          "Name": "Flushing Hospital Medical Center",
+          "Address": "45th Avenue & Parsons Blvd",
+          "Borough": "Queens",
+          "Zip": 11355,
+          "PhoneNumber": "(718) 670-5918",
+          "COVID Mortality Rate": "35.7%",
+          "Website": "https://flushinghospital.org/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.81560441542382, 40.755831983677254]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.81560441542382, 40.755831983677254]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 12,
-        "Name": "Harlem Hospital Center",
-        "Address": "506 Lenox Avenue",
-        "Borough": "Manhattan",
-        "Zip": 10037,
-        "PhoneNumber": "(212) 939-1000",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.nychealthandhospitals.org/locations/harlem/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 12,
+          "Name": "Harlem Hospital Center",
+          "Address": "506 Lenox Avenue",
+          "Borough": "Manhattan",
+          "Zip": 10037,
+          "PhoneNumber": "(212) 939-1000",
+          "COVID Mortality Rate": "28.9%",
+          "Website": "https://www.nychealthandhospitals.org/locations/harlem/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.93936333870943, 40.81442355746228]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.93936333870943, 40.81442355746228]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 13,
-        "Name": "Henry J. Carter Specialty Hospital",
-        "Address": "1752 Park Avenue",
-        "Borough": "Manhattan",
-        "Zip": 10035,
-        "PhoneNumber": "(212) 318-8000",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.nychealthandhospitals.org/locations/carter/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 13,
+          "Name": "Henry J. Carter Specialty Hospital",
+          "Address": "1752 Park Avenue",
+          "Borough": "Manhattan",
+          "Zip": 10035,
+          "PhoneNumber": "(212) 318-8000",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.nychealthandhospitals.org/locations/carter/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.94035846994161, 40.803265283748544]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.94035846994161, 40.803265283748544]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 14,
-        "Name": "Hospital for Special Surgery",
-        "Address": "535 E 70th Street",
-        "Borough": "Manhattan",
-        "Zip": 10021,
-        "PhoneNumber": "(212) 606-1236",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.hss.edu/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 14,
+          "Name": "Hospital for Special Surgery",
+          "Address": "535 E 70th Street",
+          "Borough": "Manhattan",
+          "Zip": 10021,
+          "PhoneNumber": "(212) 606-1236",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.hss.edu/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.9522154693959, 40.76511845415735]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.9522154693959, 40.76511845415735]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 15,
-        "Name": "Interfaith Medical Center",
-        "Address": "1545 Atlantic Avenue",
-        "Borough": "Brooklyn",
-        "Zip": 11213,
-        "PhoneNumber": "(718) 935-7000",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.interfaithmedical.com/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 15,
+          "Name": "Interfaith Medical Center",
+          "Address": "1545 Atlantic Avenue",
+          "Borough": "Brooklyn",
+          "Zip": 11213,
+          "PhoneNumber": "(718) 935-7000",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.interfaithmedical.com/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.93658138158868, 40.6785371099153]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.93658138158868, 40.6785371099153]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 16,
-        "Name": "Jacobi Medical Center",
-        "Address": "1400 Pelham Parkway",
-        "Borough": "Bronx",
-        "Zip": 10461,
-        "PhoneNumber": "(718) 918-5000",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.nychealthandhospitals.org/locations/jacobi/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 16,
+          "Name": "Jacobi Medical Center",
+          "Address": "1400 Pelham Parkway",
+          "Borough": "Bronx",
+          "Zip": 10461,
+          "PhoneNumber": "(718) 918-5000",
+          "COVID Mortality Rate": "26.0%",
+          "Website": "https://www.nychealthandhospitals.org/locations/jacobi/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.8472534921338, 40.85661082578815]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.8472534921338, 40.85661082578815]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 17,
-        "Name": "Jamaica Hospital Medical Center",
-        "Address": "89th Avenue & Van Wyck Expressway",
-        "Borough": "Queens",
-        "Zip": 11418,
-        "PhoneNumber": "(718) 206-6000",
-        "COVID Mortality Rate": "",
-        "Website": "https://jamaicahospital.org/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 17,
+          "Name": "Jamaica Hospital Medical Center",
+          "Address": "89th Avenue & Van Wyck Expressway",
+          "Borough": "Queens",
+          "Zip": 11418,
+          "PhoneNumber": "(718) 206-6000",
+          "COVID Mortality Rate": "",
+          "Website": "https://jamaicahospital.org/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.81632345960357, 40.70153641883989]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.81632345960357, 40.70153641883989]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 18,
-        "Name": "Kings County Hospital Center",
-        "Address": "451 Clarkson Avenue",
-        "Borough": "Brooklyn",
-        "Zip": 11203,
-        "PhoneNumber": "(718) 245-3901",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.nychealthandhospitals.org/locations/kings-county/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 18,
+          "Name": "Kings County Hospital Center",
+          "Address": "451 Clarkson Avenue",
+          "Borough": "Brooklyn",
+          "Zip": 11203,
+          "PhoneNumber": "(718) 245-3901",
+          "COVID Mortality Rate": "33.7%",
+          "Website": "https://www.nychealthandhospitals.org/locations/kings-county/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.94470750193351, 40.65702808408638]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.94470750193351, 40.65702808408638]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 19,
-        "Name": "Kingsbrook Jewish Medical Center",
-        "Address": "585 Schenectady Avenue",
-        "Borough": "Brooklyn",
-        "Zip": 11203,
-        "PhoneNumber": "(718) 604-5000",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.kingsbrook.org/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 19,
+          "Name": "Kingsbrook Jewish Medical Center",
+          "Address": "585 Schenectady Avenue",
+          "Borough": "Brooklyn",
+          "Zip": 11203,
+          "PhoneNumber": "(718) 604-5000",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.kingsbrook.org/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.9342269897461, 40.660343170166016]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.9342269897461, 40.660343170166016]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 20,
-        "Name": "Lenox Health Greenwich Village",
-        "Address": "30 Seventh Avenue",
-        "Borough": "Manhattan",
-        "Zip": 10011,
-        "PhoneNumber": "(516) 465-8018",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.northwell.edu/lenox-health-greenwich-village?utm_source=provider_listing&utm_medium=partner&utm_campaign=doctor_dot_com"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 20,
+          "Name": "Lenox Health Greenwich Village",
+          "Address": "30 Seventh Avenue",
+          "Borough": "Manhattan",
+          "Zip": 10011,
+          "PhoneNumber": "(516) 465-8018",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.northwell.edu/lenox-health-greenwich-village?utm_source=provider_listing&utm_medium=partner&utm_campaign=doctor_dot_com"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-74.00067901611328, 40.73721694946289]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-74.00067901611328, 40.73721694946289]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 21,
-        "Name": "Lenox Hill Hospital",
-        "Address": "100 East 77th Street",
-        "Borough": "Manhattan",
-        "Zip": 10021,
-        "PhoneNumber": "(212) 434-2060",
-        "COVID Mortality Rate": "",
-        "Website": "https://lenoxhill.northwell.edu/?utm_source=provider_listing&utm_medium=partner&utm_campaign=doctor_dot_com"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 21,
+          "Name": "Lenox Hill Hospital",
+          "Address": "100 East 77th Street",
+          "Borough": "Manhattan",
+          "Zip": 10021,
+          "PhoneNumber": "(212) 434-2060",
+          "COVID Mortality Rate": "",
+          "Website": "https://lenoxhill.northwell.edu/?utm_source=provider_listing&utm_medium=partner&utm_campaign=doctor_dot_com"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.9608619, 40.7736428]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.9608619, 40.7736428]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 22,
-        "Name": "Lincoln Medical & Mental Health Center",
-        "Address": "234 East 149th Street",
-        "Borough": "Bronx",
-        "Zip": 10451,
-        "PhoneNumber": "(718) 579-5700",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.nychealthandhospitals.org/locations/lincoln/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 22,
+          "Name": "Lincoln Medical & Mental Health Center",
+          "Address": "234 East 149th Street",
+          "Borough": "Bronx",
+          "Zip": 10451,
+          "PhoneNumber": "(718) 579-5700",
+          "COVID Mortality Rate": "31.1%",
+          "Website": "https://www.nychealthandhospitals.org/locations/lincoln/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.9243702, 40.817033]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.9243702, 40.817033]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 23,
-        "Name": "Long Island Jewish Forest Hills",
-        "Address": "102-01 66th Road",
-        "Borough": "Queens",
-        "Zip": 11375,
-        "PhoneNumber": "(516) 562-4060",
-        "COVID Mortality Rate": "",
-        "Website": "https://foresthills.northwell.edu/?utm_source=provider_listing&utm_medium=partner&utm_campaign=doctor_dot_com"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 23,
+          "Name": "Long Island Jewish Forest Hills",
+          "Address": "102-01 66th Road",
+          "Borough": "Queens",
+          "Zip": 11375,
+          "PhoneNumber": "(516) 562-4060",
+          "COVID Mortality Rate": "",
+          "Website": "https://foresthills.northwell.edu/?utm_source=provider_listing&utm_medium=partner&utm_campaign=doctor_dot_com"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.8851033, 40.7139664]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.8851033, 40.7139664]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 24,
-        "Name": "Long Island Jewish Medical Center",
-        "Address": "270-05 76th Avenue",
-        "Borough": "Queens",
-        "Zip": 11040,
-        "PhoneNumber": "(718) 470-7764",
-        "COVID Mortality Rate": "",
-        "Website": "https://lij.northwell.edu/?utm_source=provider_listing&utm_medium=partner&utm_campaign=doctor_dot_com"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 24,
+          "Name": "Long Island Jewish Medical Center",
+          "Address": "270-05 76th Avenue",
+          "Borough": "Queens",
+          "Zip": 11040,
+          "PhoneNumber": "(718) 470-7764",
+          "COVID Mortality Rate": "",
+          "Website": "https://lij.northwell.edu/?utm_source=provider_listing&utm_medium=partner&utm_campaign=doctor_dot_com"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.70655822753906, 40.7535514831543]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.70655822753906, 40.7535514831543]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 25,
-        "Name": "Maimonides Medical Center",
-        "Address": "4802 Tenth Avenue",
-        "Borough": "Brooklyn",
-        "Zip": 11219,
-        "PhoneNumber": "(718) 283-6000",
-        "COVID Mortality Rate": "",
-        "Website": "https://maimo.org/?utm_source=gmb&utm_medium=Yext"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 25,
+          "Name": "Maimonides Medical Center",
+          "Address": "4802 Tenth Avenue",
+          "Borough": "Brooklyn",
+          "Zip": 11219,
+          "PhoneNumber": "(718) 283-6000",
+          "COVID Mortality Rate": "",
+          "Website": "https://maimo.org/?utm_source=gmb&utm_medium=Yext"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.99905395507812, 40.63869094848633]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.99905395507812, 40.63869094848633]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 26,
-        "Name": "Memorial Hospital for Cancer and Allied Diseases",
-        "Address": "1275 York Avenue",
-        "Borough": "Manhattan",
-        "Zip": 10065,
-        "PhoneNumber": "(212) 639-2000",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.mskcc.org/locations/directory/memorial-hospital?utm_source=yext&utm_medium=local&utm_content=gmb"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 26,
+          "Name": "Memorial Hospital for Cancer and Allied Diseases",
+          "Address": "1275 York Avenue",
+          "Borough": "Manhattan",
+          "Zip": 10065,
+          "PhoneNumber": "(212) 639-2000",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.mskcc.org/locations/directory/memorial-hospital?utm_source=yext&utm_medium=local&utm_content=gmb"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.9569549, 40.7644418]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.9569549, 40.7644418]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 27,
-        "Name": "Metropolitan Hospital Center",
-        "Address": "1901 First Avenue",
-        "Borough": "Manhattan",
-        "Zip": 10029,
-        "PhoneNumber": "(212) 423-8993",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.nychealthandhospitals.org/locations/metropolitan/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 27,
+          "Name": "Metropolitan Hospital Center",
+          "Address": "1901 First Avenue",
+          "Borough": "Manhattan",
+          "Zip": 10029,
+          "PhoneNumber": "(212) 423-8993",
+          "COVID Mortality Rate": "17.7%",
+          "Website": "https://www.nychealthandhospitals.org/locations/metropolitan/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.93990325927734, 40.78984832763672]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.93990325927734, 40.78984832763672]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 28,
-        "Name": "Montefiore Med Center - Jack D Weiler Hosp of A Einstein College Div",
-        "Address": "1825 Eastchester Road",
-        "Borough": "Bronx",
-        "Zip": 10461,
-        "PhoneNumber": "(718) 904-2001",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.montefiore.org/emergency-services"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 28,
+          "Name": "Montefiore Med Center - Jack D Weiler Hosp of A Einstein College Div",
+          "Address": "1825 Eastchester Road",
+          "Borough": "Bronx",
+          "Zip": 10461,
+          "PhoneNumber": "(718) 904-2001",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.montefiore.org/emergency-services"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.84426879882812, 40.85123062133789]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.84426879882812, 40.85123062133789]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 29,
-        "Name": "Montefiore Medical Center - Henry & Lucy Moses Div",
-        "Address": "111 East 210th Street",
-        "Borough": "Bronx",
-        "Zip": 10467,
-        "PhoneNumber": "(718) 920-2001",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.montefiore.org/west"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 29,
+          "Name": "Montefiore Medical Center - Henry & Lucy Moses Div",
+          "Address": "111 East 210th Street",
+          "Borough": "Bronx",
+          "Zip": 10467,
+          "PhoneNumber": "(718) 920-2001",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.montefiore.org/west"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.8798439, 40.8800853]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.8798439, 40.8800853]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 30,
-        "Name": "Montefiore Medical Center - Montefiore Westchester Square",
-        "Address": "2475 St. Raymond Avenue",
-        "Borough": "Bronx",
-        "Zip": 10461,
-        "PhoneNumber": "(718) 430-7359",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.montefiore.org/westchester-square-campus"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 30,
+          "Name": "Montefiore Medical Center - Montefiore Westchester Square",
+          "Address": "2475 St. Raymond Avenue",
+          "Borough": "Bronx",
+          "Zip": 10461,
+          "PhoneNumber": "(718) 430-7359",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.montefiore.org/westchester-square-campus"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.84883880615234, 40.83985137939453]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.84883880615234, 40.83985137939453]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 31,
-        "Name": "Montefiore Medical Center-Wakefield Hospital",
-        "Address": "600 East 233rd Street",
-        "Borough": "Bronx",
-        "Zip": 10466,
-        "PhoneNumber": "(718) 920-9000",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.montefiore.org/wakefield"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 31,
+          "Name": "Montefiore Medical Center-Wakefield Hospital",
+          "Address": "600 East 233rd Street",
+          "Borough": "Bronx",
+          "Zip": 10466,
+          "PhoneNumber": "(718) 920-9000",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.montefiore.org/wakefield"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.8613781, 40.8932127]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.8613781, 40.8932127]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 32,
-        "Name": "Mount Sinai Beth Israel",
-        "Address": "281 First Avenue",
-        "Borough": "Manhattan",
-        "Zip": 10003,
-        "PhoneNumber": "(212) 420-2873",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.mountsinai.org/locations/beth-israel?utm_source=Yext&utm_medium=local_listing&utm_campaign=MSBI&y_source=1_MTgxMTY3Mi03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 32,
+          "Name": "Mount Sinai Beth Israel",
+          "Address": "281 First Avenue",
+          "Borough": "Manhattan",
+          "Zip": 10003,
+          "PhoneNumber": "(212) 420-2873",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.mountsinai.org/locations/beth-israel?utm_source=Yext&utm_medium=local_listing&utm_campaign=MSBI&y_source=1_MTgxMTY3Mi03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.98167419433594, 40.73259353637695]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.98167419433594, 40.73259353637695]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 33,
-        "Name": "Mount Sinai Brooklyn",
-        "Address": "3201 Kings Highway",
-        "Borough": "Brooklyn",
-        "Zip": 11234,
-        "PhoneNumber": "(718) 951-3000",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.mountsinai.org/locations/brooklyn?utm_source=Yext&utm_medium=local_listing&utm_campaign=MSBIB&y_source=1_MTgwODM2My03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 33,
+          "Name": "Mount Sinai Brooklyn",
+          "Address": "3201 Kings Highway",
+          "Borough": "Brooklyn",
+          "Zip": 11234,
+          "PhoneNumber": "(718) 951-3000",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.mountsinai.org/locations/brooklyn?utm_source=Yext&utm_medium=local_listing&utm_campaign=MSBIB&y_source=1_MTgwODM2My03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.93413543701172, 40.625064849853516]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.93413543701172, 40.625064849853516]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 34,
-        "Name": "Mount Sinai Hospital",
-        "Address": "One Gustave L Levy Place",
-        "Borough": "Manhattan",
-        "Zip": 10029,
-        "PhoneNumber": "(212) 241-7005",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.mountsinai.org/locations/mount-sinai"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 34,
+          "Name": "Mount Sinai Hospital",
+          "Address": "One Gustave L Levy Place",
+          "Borough": "Manhattan",
+          "Zip": 10029,
+          "PhoneNumber": "(212) 241-7005",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.mountsinai.org/locations/mount-sinai"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.953888, 40.790471]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.953888, 40.790471]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 35,
-        "Name": "Mount Sinai Hospital - Mount Sinai Hospital of Queens",
-        "Address": "25-10 30th Avenue",
-        "Borough": "Queens",
-        "Zip": 11102,
-        "PhoneNumber": "(718) 932-1000",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.mountsinai.org/locations/queens?utm_source=Yext&utm_medium=local_listing&utm_campaign=MSHQ&y_source=1_MTgwODM1NS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 35,
+          "Name": "Mount Sinai Hospital - Mount Sinai Hospital of Queens",
+          "Address": "25-10 30th Avenue",
+          "Borough": "Queens",
+          "Zip": 11102,
+          "PhoneNumber": "(718) 932-1000",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.mountsinai.org/locations/queens?utm_source=Yext&utm_medium=local_listing&utm_campaign=MSHQ&y_source=1_MTgwODM1NS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.9263687133789, 40.76921844482422]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.9263687133789, 40.76921844482422]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 36,
-        "Name": "Mount Sinai Morningside",
-        "Address": "1111 Amsterdam Avenue",
-        "Borough": "Manhattan",
-        "Zip": 10025,
-        "PhoneNumber": "(212) 523-4295",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.mountsinai.org/locations/morningside"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 36,
+          "Name": "Mount Sinai Morningside",
+          "Address": "1111 Amsterdam Avenue",
+          "Borough": "Manhattan",
+          "Zip": 10025,
+          "PhoneNumber": "(212) 523-4295",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.mountsinai.org/locations/morningside"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.96149444580078, 40.80621337890625]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.96149444580078, 40.80621337890625]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 37,
-        "Name": "Mount Sinai West",
-        "Address": "1000 10th Avenue",
-        "Borough": "Manhattan",
-        "Zip": 10019,
-        "PhoneNumber": "(212) 523-7225",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.mountsinai.org/locations/west?utm_source=Yext&utm_medium=local_listing&utm_campaign=MSR"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 37,
+          "Name": "Mount Sinai West",
+          "Address": "1000 10th Avenue",
+          "Borough": "Manhattan",
+          "Zip": 10019,
+          "PhoneNumber": "(212) 523-7225",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.mountsinai.org/locations/west?utm_source=Yext&utm_medium=local_listing&utm_campaign=MSR"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.9868992, 40.7697096]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.9868992, 40.7697096]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 38,
-        "Name": "New York Community Hospital of Brooklyn, Inc",
-        "Address": "2525 Kings Highway",
-        "Borough": "Brooklyn",
-        "Zip": 11229,
-        "PhoneNumber": "(718) 692-5300",
-        "COVID Mortality Rate": "",
-        "Website": "https://nych.com/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 38,
+          "Name": "New York Community Hospital of Brooklyn, Inc",
+          "Address": "2525 Kings Highway",
+          "Borough": "Brooklyn",
+          "Zip": 11229,
+          "PhoneNumber": "(718) 692-5300",
+          "COVID Mortality Rate": "",
+          "Website": "https://nych.com/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.9485612, 40.6138835]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.9485612, 40.6138835]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 39,
-        "Name": "New York Eye and Ear Infirmary of Mount Sinai",
-        "Address": "310 East 14th Street",
-        "Borough": "Manhattan",
-        "Zip": 10003,
-        "PhoneNumber": "(212) 979-4300",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.nyee.edu/?utm_source=Yext&utm_medium=local_listing&utm_campaign=NYEE&y_source=1_MTgwODM2MS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 39,
+          "Name": "New York Eye and Ear Infirmary of Mount Sinai",
+          "Address": "310 East 14th Street",
+          "Borough": "Manhattan",
+          "Zip": 10003,
+          "PhoneNumber": "(212) 979-4300",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.nyee.edu/?utm_source=Yext&utm_medium=local_listing&utm_campaign=NYEE&y_source=1_MTgwODM2MS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.9845807, 40.7318799]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.9845807, 40.7318799]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 40,
-        "Name": "New York-Presbyterian Brooklyn Methodist Hospital",
-        "Address": "506 Sixth Street",
-        "Borough": "Brooklyn",
-        "Zip": 11215,
-        "PhoneNumber": "(718) 780-3101",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.nyp.org/brooklyn"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 40,
+          "Name": "New York-Presbyterian Brooklyn Methodist Hospital",
+          "Address": "506 Sixth Street",
+          "Borough": "Brooklyn",
+          "Zip": 11215,
+          "PhoneNumber": "(718) 780-3101",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.nyp.org/brooklyn"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.9793498, 40.6682118]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.9793498, 40.6682118]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 41,
-        "Name": "New York-Presbyterian David H. Koch Center",
-        "Address": "1283 York Avenue",
-        "Borough": "Manhattan",
-        "Zip": 10065,
-        "PhoneNumber": "(646)962-4463",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.nyp.org/locations/david-h-koch-center"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 41,
+          "Name": "New York-Presbyterian David H. Koch Center",
+          "Address": "1283 York Avenue",
+          "Borough": "Manhattan",
+          "Zip": 10065,
+          "PhoneNumber": "(646)962-4463",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.nyp.org/locations/david-h-koch-center"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.9555505, 40.7645504]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.9555505, 40.7645504]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 42,
-        "Name": "New York-Presbyterian Hospital - Allen Hospital",
-        "Address": "5141 Broadway",
-        "Borough": "Manhattan",
-        "Zip": 10034,
-        "PhoneNumber": "(212) 932-4000",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.nyp.org/allenhospital"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 42,
+          "Name": "New York-Presbyterian Hospital - Allen Hospital",
+          "Address": "5141 Broadway",
+          "Borough": "Manhattan",
+          "Zip": 10034,
+          "PhoneNumber": "(212) 932-4000",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.nyp.org/allenhospital"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.9128637, 40.8732784]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.9128637, 40.8732784]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 43,
-        "Name": "New York-Presbyterian Hospital - Columbia Presbyterian Center",
-        "Address": "622 West 168th Street",
-        "Borough": "Manhattan",
-        "Zip": 10032,
-        "PhoneNumber": "(212) 305-2500",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.nyp.org/locations/newyork-presbyterian-columbia-university-medical-center?utm_source=yextgmb&utm_medium=organic&utm_campaign=yext_doctor_listings&y_source=1_MTM4MTIwMjUtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 43,
+          "Name": "New York-Presbyterian Hospital - Columbia Presbyterian Center",
+          "Address": "622 West 168th Street",
+          "Borough": "Manhattan",
+          "Zip": 10032,
+          "PhoneNumber": "(212) 305-2500",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.nyp.org/locations/newyork-presbyterian-columbia-university-medical-center?utm_source=yextgmb&utm_medium=organic&utm_campaign=yext_doctor_listings&y_source=1_MTM4MTIwMjUtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.9403319, 40.8414146]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.9403319, 40.8414146]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 44,
-        "Name": "New York-Presbyterian Hospital - New York Weill Cornell Center",
-        "Address": "525 East 68th Street",
-        "Borough": "Manhattan",
-        "Zip": 10065,
-        "PhoneNumber": "(212) 746-5454",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.nyp.org/locations/newyork-presbyterian-weill-cornell-medical-center"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 44,
+          "Name": "New York-Presbyterian Hospital - New York Weill Cornell Center",
+          "Address": "525 East 68th Street",
+          "Borough": "Manhattan",
+          "Zip": 10065,
+          "PhoneNumber": "(212) 746-5454",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.nyp.org/locations/newyork-presbyterian-weill-cornell-medical-center"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.9549121, 40.7647523]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.9549121, 40.7647523]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 45,
-        "Name": "New York-Presbyterian/Lower Manhattan Hospital",
-        "Address": "170 William Street",
-        "Borough": "Manhattan",
-        "Zip": 10038,
-        "PhoneNumber": "(212) 312-5175",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.nyp.org/lowermanhattan"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 45,
+          "Name": "New York-Presbyterian/Lower Manhattan Hospital",
+          "Address": "170 William Street",
+          "Borough": "Manhattan",
+          "Zip": 10038,
+          "PhoneNumber": "(212) 312-5175",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.nyp.org/lowermanhattan"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-74.005414, 40.710444]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-74.005414, 40.710444]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 46,
-        "Name": "New York-Presbyterian/Queens",
-        "Address": "56-45 Main Street",
-        "Borough": "Queens",
-        "Zip": 11355,
-        "PhoneNumber": "(718) 670-2000",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.nyp.org/queens"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 46,
+          "Name": "New York-Presbyterian/Queens",
+          "Address": "56-45 Main Street",
+          "Borough": "Queens",
+          "Zip": 11355,
+          "PhoneNumber": "(718) 670-2000",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.nyp.org/queens"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.8251938, 40.7472635]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.8251938, 40.7472635]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 47,
-        "Name": "North Central Bronx Hospital",
-        "Address": "3424 Kossuth Avenue & 210th Street",
-        "Borough": "Bronx",
-        "Zip": 10467,
-        "PhoneNumber": "(718) 519-3500",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.nychealthandhospitals.org/locations/north-central-bronx/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 47,
+          "Name": "North Central Bronx Hospital",
+          "Address": "3424 Kossuth Avenue & 210th Street",
+          "Borough": "Bronx",
+          "Zip": 10467,
+          "PhoneNumber": "(718) 519-3500",
+          "COVID Mortality Rate": "20.1%",
+          "Website": "https://www.nychealthandhospitals.org/locations/north-central-bronx/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.8813965, 40.8803581]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.8813965, 40.8803581]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 48,
-        "Name": "NYU Langone Health-Cobble Hill",
-        "Address": "83 Amity Street",
-        "Borough": "Brooklyn",
-        "Zip": 11201,
-        "PhoneNumber": "(646) 754-7900",
-        "COVID Mortality Rate": "",
-        "Website": "https://nyulangone.org/locations/nyu-langone-health-cobble-hill"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 48,
+          "Name": "NYU Langone Health-Cobble Hill",
+          "Address": "83 Amity Street",
+          "Borough": "Brooklyn",
+          "Zip": 11201,
+          "PhoneNumber": "(646) 754-7900",
+          "COVID Mortality Rate": "",
+          "Website": "https://nyulangone.org/locations/nyu-langone-health-cobble-hill"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.9980822, 40.6899127]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.9980822, 40.6899127]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 49,
-        "Name": "NYU Langone Hospital-Brooklyn",
-        "Address": "150 55th Street",
-        "Borough": "Brooklyn",
-        "Zip": 11220,
-        "PhoneNumber": "(718) 630-7300",
-        "COVID Mortality Rate": "",
-        "Website": "https://nyulangone.org/locations/nyu-langone-hospital-brooklyn"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 49,
+          "Name": "NYU Langone Hospital-Brooklyn",
+          "Address": "150 55th Street",
+          "Borough": "Brooklyn",
+          "Zip": 11220,
+          "PhoneNumber": "(718) 630-7300",
+          "COVID Mortality Rate": "",
+          "Website": "https://nyulangone.org/locations/nyu-langone-hospital-brooklyn"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-74.02097714417752, 40.64687505027567]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-74.02097714417752, 40.64687505027567]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 50,
-        "Name": "NYU Langone Hospitals - Tisch Hospital",
-        "Address": "550 First Avenue",
-        "Borough": "Manhattan",
-        "Zip": 10016,
-        "PhoneNumber": "(212) 263-5500",
-        "COVID Mortality Rate": "",
-        "Website": "https://nyulangone.org/locations/tisch-hospital"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 50,
+          "Name": "NYU Langone Hospitals - Tisch Hospital",
+          "Address": "550 First Avenue",
+          "Borough": "Manhattan",
+          "Zip": 10016,
+          "PhoneNumber": "(212) 263-5500",
+          "COVID Mortality Rate": "",
+          "Website": "https://nyulangone.org/locations/tisch-hospital"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.97376413014138, 40.74483479663696]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.97376413014138, 40.74483479663696]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 51,
-        "Name": "NYU Langone Orthopedic Hospital",
-        "Address": "301 East 17th Street",
-        "Borough": "Manhattan",
-        "Zip": 10003,
-        "PhoneNumber": "(212) 598-6000",
-        "COVID Mortality Rate": "",
-        "Website": "https://nyulangone.org/locations/nyu-langone-orthopedic-hospital"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 51,
+          "Name": "NYU Langone Orthopedic Hospital",
+          "Address": "301 East 17th Street",
+          "Borough": "Manhattan",
+          "Zip": 10003,
+          "PhoneNumber": "(212) 598-6000",
+          "COVID Mortality Rate": "",
+          "Website": "https://nyulangone.org/locations/nyu-langone-orthopedic-hospital"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.98294258588766, 40.734548491944665]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.98294258588766, 40.734548491944665]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 52,
-        "Name": "Queens Hospital Center",
-        "Address": "82-68 164th Street",
-        "Borough": "Queens",
-        "Zip": 11432,
-        "PhoneNumber": "(718) 883-2350",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.nychealthandhospitals.org/locations/queens/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 52,
+          "Name": "Queens Hospital Center",
+          "Address": "82-68 164th Street",
+          "Borough": "Queens",
+          "Zip": 11432,
+          "PhoneNumber": "(718) 883-2350",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.nychealthandhospitals.org/locations/queens/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.80480545586205, 40.72025945741202]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.80480545586205, 40.72025945741202]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 53,
-        "Name": "Richmond University Medical Center",
-        "Address": "355 Bard Avenue",
-        "Borough": "Staten Island",
-        "Zip": 10310,
-        "PhoneNumber": "(718) 818-2413",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.rumcsi.org/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 53,
+          "Name": "Richmond University Medical Center",
+          "Address": "355 Bard Avenue",
+          "Borough": "Staten Island",
+          "Zip": 10310,
+          "PhoneNumber": "(718) 818-2413",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.rumcsi.org/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-74.10520472896363, 40.635832914119455]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-74.10520472896363, 40.635832914119455]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 54,
-        "Name": "Rockefeller University Hospital",
-        "Address": "1230 York Avenue",
-        "Borough": "Manhattan",
-        "Zip": 10021,
-        "PhoneNumber": "(212) 327-7511",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.rucares.org/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 54,
+          "Name": "Rockefeller University Hospital",
+          "Address": "1230 York Avenue",
+          "Borough": "Manhattan",
+          "Zip": 10021,
+          "PhoneNumber": "(212) 327-7511",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.rucares.org/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-74.08759157073959, 40.64221008050865]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-74.08759157073959, 40.64221008050865]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 55,
-        "Name": "SBH Health System",
-        "Address": "4422 Third Avenue",
-        "Borough": "Bronx",
-        "Zip": 10457,
-        "PhoneNumber": "(718) 960-6100",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.sbhny.org/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 55,
+          "Name": "SBH Health System",
+          "Address": "4422 Third Avenue",
+          "Borough": "Bronx",
+          "Zip": 10457,
+          "PhoneNumber": "(718) 960-6100",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.sbhny.org/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.89076518451219, 40.85353050066685]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.89076518451219, 40.85353050066685]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 56,
-        "Name": "St Johns Episcopal Hospital So Shore",
-        "Address": "327 Beach 19th Street",
-        "Borough": "Brooklyn",
-        "Zip": 11691,
-        "PhoneNumber": "(718) 868-7320",
-        "COVID Mortality Rate": "",
-        "Website": "https://ehs.org/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 56,
+          "Name": "St Johns Episcopal Hospital So Shore",
+          "Address": "327 Beach 19th Street",
+          "Borough": "Brooklyn",
+          "Zip": 11691,
+          "PhoneNumber": "(718) 868-7320",
+          "COVID Mortality Rate": "",
+          "Website": "https://ehs.org/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.75358097779605, 40.59963668941933]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.75358097779605, 40.59963668941933]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 57,
-        "Name": "Staten Island University Hosp-North",
-        "Address": "475 Seaview Avenue",
-        "Borough": "Staten Island",
-        "Zip": 10305,
-        "PhoneNumber": "(718) 226-9515",
-        "COVID Mortality Rate": "",
-        "Website": "https://siuh.northwell.edu/?utm_source=provider_listing&utm_medium=partner&utm_campaign=doctor_dot_com"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 57,
+          "Name": "Staten Island University Hosp-North",
+          "Address": "475 Seaview Avenue",
+          "Borough": "Staten Island",
+          "Zip": 10305,
+          "PhoneNumber": "(718) 226-9515",
+          "COVID Mortality Rate": "",
+          "Website": "https://siuh.northwell.edu/?utm_source=provider_listing&utm_medium=partner&utm_campaign=doctor_dot_com"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-74.0853279847869, 40.585025294159266]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-74.0853279847869, 40.585025294159266]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 58,
-        "Name": "Staten Island University Hospital Prince's Bay",
-        "Address": "375 Seguine Avenue",
-        "Borough": "Staten Island",
-        "Zip": 10309,
-        "PhoneNumber": "(718) 226-9515",
-        "COVID Mortality Rate": "",
-        "Website": "https://siuh.northwell.edu/?utm_source=provider_listing&utm_medium=partner&utm_campaign=doctor_dot_com"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 58,
+          "Name": "Staten Island University Hospital Prince's Bay",
+          "Address": "375 Seguine Avenue",
+          "Borough": "Staten Island",
+          "Zip": 10309,
+          "PhoneNumber": "(718) 226-9515",
+          "COVID Mortality Rate": "",
+          "Website": "https://siuh.northwell.edu/?utm_source=provider_listing&utm_medium=partner&utm_campaign=doctor_dot_com"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-74.19629327074216, 40.516953528647996]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-74.19629327074216, 40.516953528647996]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 59,
-        "Name": "University Hospital of Brooklyn",
-        "Address": "445 Lenox Road",
-        "Borough": "Brookyln",
-        "Zip": 11203,
-        "PhoneNumber": "(718) 270-2401",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.downstate.edu/patient-care/index.html"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 59,
+          "Name": "University Hospital of Brooklyn",
+          "Address": "445 Lenox Road",
+          "Borough": "Brookyln",
+          "Zip": 11203,
+          "PhoneNumber": "(718) 270-2401",
+          "COVID Mortality Rate": "",
+          "Website": "https://www.downstate.edu/patient-care/index.html"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.94424117258819, 40.65512547008784]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.94424117258819, 40.65512547008784]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 60,
-        "Name": "Woodhull Medical & Mental Health Center",
-        "Address": "760 Broadway",
-        "Borough": "Brooklyn",
-        "Zip": 11206,
-        "PhoneNumber": "(718) 963-8101",
-        "COVID Mortality Rate": "",
-        "Website": "https://www.nychealthandhospitals.org/locations/woodhull/"
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 60,
+          "Name": "Woodhull Medical & Mental Health Center",
+          "Address": "760 Broadway",
+          "Borough": "Brooklyn",
+          "Zip": 11206,
+          "PhoneNumber": "(718) 963-8101",
+          "COVID Mortality Rate": "35.0%",
+          "Website": "https://www.nychealthandhospitals.org/locations/woodhull/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.94250087258723, 40.69980865434159]
+        }
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.94250087258723, 40.69980865434159]
+      {
+        "type": "Feature",
+        "properties": {
+          "ID": 61,
+          "Name": "Wyckoff Heights Medical Center",
+          "Address": "374 Stockholm Street",
+          "Borough": "Brooklyn",
+          "Zip": 11237,
+          "PhoneNumber": "(718) 963-7101",
+          "COVID Mortality Rate": "",
+          "Website": "https://whmcny.org/"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.91691245225176, 40.70423651376079]
+        }
       }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ID": 61,
-        "Name": "Wyckoff Heights Medical Center",
-        "Address": "374 Stockholm Street",
-        "Borough": "Brooklyn",
-        "Zip": 11237,
-        "PhoneNumber": "(718) 963-7101",
-        "COVID Mortality Rate": "",
-        "Website": "https://whmcny.org/"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-73.91691245225176, 40.70423651376079]
-      }
-    }
-  ],
-
-  "type": "FeatureCollection"
-}
+    ],
+  
+    "type": "FeatureCollection"
+  }

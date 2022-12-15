@@ -1,9 +1,9 @@
 import React from "react";
-import Map from "./Map2";
+import Map from "./Map3";
 import "./App.css";
 import "./sidebar.css";
 
-function SideBar2() {
+function SideBar3() {
   const [data, setData] = React.useState(null);
 
   // React.useEffect(() => {
@@ -15,11 +15,11 @@ function SideBar2() {
   return (
     <div>
       <>
-    
-        <nav id="menu"></nav>
+      <nav id="menu"></nav>
+
         <div className="side">
           <div className="heading">
-            <h1>Our locations</h1>
+            <h1>Hospitals</h1>
           </div>
           <div id="listings" className="listings" />
         </div>
@@ -31,4 +31,4 @@ function SideBar2() {
   );
 }
 
-export default SideBar2;
+export default SideBar3;

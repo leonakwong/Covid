@@ -32,9 +32,6 @@
   background-color: rgb(67, 125, 242);
   padding-bottom: 20px;
 }
-.content {
-  padding-top: 75px;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -48,4 +45,11 @@
 .sticky-nav {
   position: sticky;
   top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  max-height: 55px;
+}
+.content {
+  padding-top: 75px;
 }

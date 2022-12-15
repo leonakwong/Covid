@@ -92,11 +92,11 @@ function FindVaccine() {
   const [data, setData] = React.useState(null);
   const navigate = useNavigate();
 
-  React.useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((data) => setData(data.express));
-  }, []);
+  // React.useEffect(() => {
+  //   fetch("/api")
+  //     .then((res) => res.json())
+  //     .then((data) => setData(data.express));
+  // }, []);
 
   const survey = new Model(surveyJson);
   survey.focusFirstQuestionAutomatic = false;
@@ -114,6 +114,8 @@ function FindVaccine() {
       // code block
     }
 
+    let covdata;
+
     Papa.parse(
       "https://raw.githubusercontent.com/nychealth/coronavirus-data/master/latest/last7days-by-modzcta.csv",
       {
@@ -121,16 +123,20 @@ function FindVaccine() {
         header: true,
         complete: function (results) {
           console.log(results);
-          covdata = results.data;
+          covdata = results;
           console.log(covdata);
         },
       }
     );
+
+    console.log(covdata);
   }, []);
+
 
   const stopComplete = useCallback((sender, options) => {
     const results = JSON.stringify(sender.data);
     const zipNum = Number(sender.data.zipcode);
+    zip = 1000;
     for (let i = 0; i < zips.length; i++) {
       if (zipNum === zips[i]) {
         zip = i;
@@ -147,9 +153,6 @@ function FindVaccine() {
 
   return (
     <>
-      <div>
-        <p>{!data ? "Loading..." : data}</p>
-      </div>
       <Survey model={survey} />
     </>
   );

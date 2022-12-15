@@ -566,15 +566,21 @@ const Map = () => {
           e.stopPropagation();
 
           const visibility = map.getLayoutProperty(clickedLayer, "visibility");
-          for (var i = 0; i < toggleableLayerIds.length; i++){
-            if (clickedLayer === toggleableLayerIds[i]) {
-              layers.children[i].className = 'active';
-              map.setLayoutProperty(toggleableLayerIds[i], 'visibility', 'visible');
+          if (layers.children[clickedLayer].className === ''){
+            for (var i = 0; i < toggleableLayerIds.length; i++){
+              if (clickedLayer === toggleableLayerIds[i]) {
+                  layers.children[i].className = 'active';
+                  map.setLayoutProperty(toggleableLayerIds[i], 'visibility', 'visible');
+                }
+              else {
+                layers.children[i].className = '';
+                map.setLayoutProperty(toggleableLayerIds[i], 'visibility', 'none');
+              }
             }
-            else {
-              layers.children[i].className = '';
-              map.setLayoutProperty(toggleableLayerIds[i], 'visibility', 'none');
-            }
+          }
+          else if (layers.children[clickedLayer].className === 'active'){
+            layers.children[clickedLayer].className = '';
+            map.setLayoutProperty(clickedLayer, 'visibility', 'none');
           }
         };
 

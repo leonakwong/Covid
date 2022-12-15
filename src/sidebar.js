@@ -1,6 +1,7 @@
 import React from "react";
 import Map from "./Map";
 import "./App.css";
+import "./sidebar.css";
 
 function SideBar() {
   const [data, setData] = React.useState(null);
@@ -14,12 +15,11 @@ function SideBar() {
   return (
     <div>
       <>
-        <link href="style.css" rel="stylesheet" />
         <nav id="menu"></nav>
 
         <div className="side">
           <div className="heading">
-            <h1>Our locations</h1>
+            <h1>Vaccine Centers</h1>
           </div>
           <div id="listings" className="listings" />
         </div>

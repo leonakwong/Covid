@@ -1,77 +1,17 @@
 import React, { useRef, useEffect, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import "./Map.css";
-import geoJson from "./hospitals.json";
+//import GeoJson from "./hospital";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
 import * as turf from "@turf/turf";
 import covid from "./covidData2.json";
 import Papa from "papaparse";
 import { useParams } from "react-router-dom";
+// import { getHospitals } from "../../be/test";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoiZXRoYW5sYXZpbnNreTQ2IiwiYSI6ImNsOWZ4YzI5dTBkbnkzdm14ZGlwbzUwbTgifQ.jByzOogEAXnVPymbyXjj-Q";
-
-const stores = geoJson;
-
-stores.features.forEach(function (store, i) {
-  store.properties.id = i;
-});
-
-// Papa.parse(
-//   "https://raw.githubusercontent.com/nychealth/coronavirus-data/master/latest/hosp_death_last28days-by-modzcta.csv",
-//   {
-//     download: true,
-//     header: true,
-//     complete: function (results) {
-//       console.log(reuslts);
-//     },
-//   }
-// );
-
-// let testy = [];
-
-// const csvData = Papa.parse(
-//   "https://raw.githubusercontent.com/nychealth/coronavirus-data/master/latest/hosp_death_last28days-by-modzcta.csv",
-//   {
-//     download: true,
-//     header: true,
-//     complete: function (data) {
-//       results = data;
-//     },
-//   }
-// );
-
-// let testy = [];
-
-// function doStuff(teste) {
-//   //Data is usable here
-//   // console.log(teste);
-//   for (let i = 0; i < teste.length; i++) {
-//     testy.push({
-//       code: teste[i].ZIP.toString(),
-//       hdi: teste[i].hospitalization_count_28day,
-//     });
-//   }
-// }
-
-// function parseData(url, callBack) {
-//   Papa.parse(url, {
-//     header: true,
-//     download: true,
-//     header: true,
-//     complete: function (results) {
-//       callBack(results.data);
-//     },
-//   });
-// }
-
-// parseData(
-//   "https://raw.githubusercontent.com/nychealth/coronavirus-data/master/latest/hosp_death_last28days-by-modzcta.csv",
-//   doStuff
-// );
-
-// console.log(testy);
 
 let zips = [
   10001, 10002, 10003, 10004, 10005, 10006, 10007, 10009, 10010, 10011, 10012,
@@ -96,7 +36,7 @@ let zipInput = 10010;
 let zip;
 
 for (let i = 0; i < zips.length; i++) {
-  if (zipInput == zips[i]) {
+  if (zipInput === zips[i]) {
     zip = i;
   }
 }
@@ -140,8 +80,71 @@ const Map = () => {
       }
     }
   }
+
+  // const [padata, setData] = React.useState(null);
+  // useEffect(() => {
+  //     getCov();
+  // }, []);
+  // function getCov() {
+  //   Papa.parse(
+  //     "https://raw.githubusercontent.com/nychealth/coronavirus-data/master/latest/last7days-by-modzcta.csv",
+  //       {
+  //         download: true,
+  //         header: true,
+  //         complete: function (results) {
+  //           console.log(results);
+  //           setData(results.data);
+  //         },
+  //       }
+  //     );
+  //   };
+  // console.log(padata);  
+
   var middle = [covid[zip].lon, covid[zip].lat];
   const mapContainerRef = useRef(null);
+  
+
+
+  let mygeojson = { type: "FeatureCollection", features: [] };
+  const [test1, setTest1] = useState(false);
+  useEffect(() => {
+    getHospital();
+    
+  }, []);
+  function getHospital() {
+    fetch('http://localhost:4000/hospital')
+      .then((response) => response.json())
+      .then((responseJson) => {
+        console.log(responseJson);
+        setTest1(responseJson);
+        console.log(test1);
+      })
+  };
+  for (let i = 0; i < test1.length; i++){
+    mygeojson.features[i] = {
+      type: "Feature",
+      properties: {
+        Name: test1[i].Name,
+        Address: test1[i].Address,
+        Borough: test1[i].Borough,
+        Zip:test1[i].Zip,
+        PhoneNumber: test1[i].PhoneNumber,
+        Website: test1[i].Website,
+      },
+      geometry: { 
+        type: "Point",
+        coordinates: test1[i].coordinates.split(', '),
+      },
+    };
+  }
+  const stores = mygeojson;
+  console.log(stores);
+
+
+
+  stores.features.forEach(function (store, i) {
+      store.properties.id = i;
+    });
 
   // Initialize map when component mounts
   useEffect(() => {
@@ -421,6 +424,7 @@ const Map = () => {
         listings.removeChild(listings.firstChild);
       }
       buildLocationList(stores);
+      console.log(stores.features[0] ? (stores.features[0]) : "null");
       const activeListing = document.getElementById(
         `listing-${stores.features[0].properties.id}`
       );

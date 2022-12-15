@@ -7,7 +7,7 @@ const NewsList = () => {
     
     useEffect(() => {
         const getArticles = async () => {
-            const response = await axios.get('https://newsapi.org/v2/everything?q=COVID-19&from=2022-11-11?category=health&apiKey=570dea4467c847d4b4f8277f1a7c4e18'
+            const response = await axios.get('https://newsapi.org/v2/top-headlines?q=COVID-19&from=2022-12-01?category=science&apiKey=570dea4467c847d4b4f8277f1a7c4e18'
             )
             console.log(response.data.articles)
             setArticles(response.data.articles)
