@@ -130,6 +130,8 @@ for (let i = 0; i < covid.length; i++) {
 const Map = () => {
   const params = useParams();
   const zipcode = params.zipcode;
+  const servType = params.vax;
+  console.log(servType);
   if (typeof zipcode === "string" && zipcode.trim().length !== 0) {
     console.log(zipcode);
     const zipNum = Number(zipcode);

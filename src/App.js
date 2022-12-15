@@ -28,7 +28,7 @@ function App() {
           <Navbar bg='myBlue' variant="dark" className="sticky-nav">
             <Navbar.Brand> Project Hygieia </Navbar.Brand>
             <Nav>
-              <Nav.Link as={Link} to="/App">Home</Nav.Link>
+              <Nav.Link as={Link} to="/">Home</Nav.Link>
               <Nav.Link as={Link} to="/FindLocations">Find Locations</Nav.Link>
               <Nav.Link as={Link} to="/NewsList">News</Nav.Link>
               <Nav.Link as={Link} to="/Data">Data Visualized</Nav.Link>
@@ -40,16 +40,16 @@ function App() {
           </div>
           <div>
             <Routes>
-              <Route path="/App" element={<Home />} />
+              <Route path="/" element={<Home />} />
               <Route path="/FindLocations" element={<FindVaccine />} />
               <Route path="/NewsList" element={<NewsList />} />
               <Route path="/Vaccine" element={<SideBar />} />
-              <Route path="/Vaccine/:zipcode" element={<SideBar />} />
+              <Route path="/Vaccine/:zipcode/:vax" element={<SideBar />} />
               <Route path="/RapidTesting" element={<SideBar2 />} />
-              <Route path="/RapidTesting/:zipcode" element={<SideBar2 />} />
+              <Route path="/RapidTesting/:zipcode/:rapid" element={<SideBar2 />} />
               <Route path="/Data" element={<DataComponent />} />
               <Route path="/Hospitals" element={<SideBar3 />} />
-              <Route path="/Hospitals/:zipcode" element={<SideBar3 />} />
+              <Route path="/Hospitals/:zipcode/" element={<SideBar3 />} />
             </Routes>
           </div>
         </div>

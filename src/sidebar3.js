@@ -16,7 +16,6 @@ function SideBar3() {
     <div>
       <>
       <nav id="menu"></nav>
-
         <div className="side">
           <div className="heading">
             <h1>Hospitals</h1>

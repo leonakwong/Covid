@@ -4,7 +4,6 @@ import "./App.css";
 import "./sidebar.css";
 
 function SideBar2() {
-  const [data, setData] = React.useState(null);
 
   // React.useEffect(() => {
   //   fetch("/api")
@@ -19,7 +18,7 @@ function SideBar2() {
         <nav id="menu"></nav>
         <div className="side">
           <div className="heading">
-            <h1>Our locations</h1>
+            <h1>Testing Centers</h1>
           </div>
           <div id="listings" className="listings" />
         </div>

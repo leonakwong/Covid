@@ -5,7 +5,6 @@ import "survey-core/defaultV2.min.css";
 import { StylesManager, Model } from "survey-core";
 import { Survey } from "survey-react-ui";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Papa from "papaparse";
 import { redirect, useNavigate } from "react-router-dom";
 
 StylesManager.applyTheme("defaultV2");
@@ -28,7 +27,7 @@ const surveyJson = {
     },
     {
       type: "radiogroup",
-      name: "vaccine",
+      name: "vax",
       title: "What vaccine are you looking for?",
       visibleIf: "{service} = 'Vaccine'",
       colCount: 1,
@@ -89,14 +88,8 @@ let zip = 1000;
 let covdata = {};
 
 function FindVaccine() {
-  const [data, setData] = React.useState(null);
+  const [serv, setData] = React.useState(null);
   const navigate = useNavigate();
-
-  // React.useEffect(() => {
-  //   fetch("/api")
-  //     .then((res) => res.json())
-  //     .then((data) => setData(data.express));
-  // }, []);
 
   const survey = new Model(surveyJson);
   survey.focusFirstQuestionAutomatic = false;
@@ -105,31 +98,15 @@ function FindVaccine() {
     const results = JSON.stringify(sender.data);
     switch (sender.data.service) {
       case "Vaccine":
-        navigate("/Vaccine/" + sender.data.zipcode);
+        navigate("/Vaccine/" + sender.data.zipcode + "/" + sender.data.vax);
         break;
       case "Rapid Testing":
-        navigate("/RapidTesting/" + sender.data.zipcode);
+        navigate("/RapidTesting/" + sender.data.zipcode + "/" + sender.data.rapid);
         break;
       default:
       // code block
     }
 
-    let covdata;
-
-    Papa.parse(
-      "https://raw.githubusercontent.com/nychealth/coronavirus-data/master/latest/last7days-by-modzcta.csv",
-      {
-        download: true,
-        header: true,
-        complete: function (results) {
-          console.log(results);
-          covdata = results;
-          console.log(covdata);
-        },
-      }
-    );
-
-    console.log(covdata);
   }, []);
 
 

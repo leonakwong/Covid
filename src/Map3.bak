@@ -107,19 +107,17 @@ const Map = () => {
 
   let mygeojson = { type: "FeatureCollection", features: [] };
   let stores;
-  let test1;
-  // const [test1, setTest1] = useState(false);
-  // useEffect(() => {
-  //   getHospital();
-  // }, []);
+  const [test1, setTest1] = useState(false);
+  useEffect(() => {
+    getHospital();
+  }, []);
 
   async function getHospital() {
     await fetch('http://localhost:4000/hospital')
       .then((response) => response.json())
       .then((responseJson) => {
         console.log(responseJson);
-        // setTest1(responseJson);
-        test1 = responseJson;
+        setTest1(responseJson);
         console.log(test1);
       });
 
@@ -147,7 +145,29 @@ const Map = () => {
       });
   };
 
-  getHospital();
+  for (let i = 0; i < test1.length; i++){
+    mygeojson.features[i] = {
+      type: "Feature",
+      properties: {
+        Name: test1[i].Name,
+        Address: test1[i].Address,
+        Borough: test1[i].Borough,
+        Zip:test1[i].Zip,
+        PhoneNumber: test1[i].PhoneNumber,
+        Website: test1[i].Website,
+      },
+      geometry: { 
+        type: "Point",
+        coordinates: test1[i].coordinates.split(', '),
+      },
+    };
+  }; 
+  stores = mygeojson;
+  console.log(stores);
+ 
+  stores.features.forEach(function (store, i) {
+      store.properties.id = i;
+    });
 
   // Initialize map when component mounts
   useEffect(() => {
