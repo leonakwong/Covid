@@ -7,6 +7,7 @@ import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
 import * as turf from "@turf/turf";
 import covid from "./covidData2.json";
 import Papa from "papaparse";
+import { useParams } from "react-router-dom";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoiZXRoYW5sYXZpbnNreTQ2IiwiYSI6ImNsOWZ4YzI5dTBkbnkzdm14ZGlwbzUwbTgifQ.jByzOogEAXnVPymbyXjj-Q";
@@ -91,7 +92,7 @@ let zips = [
   11428, 11429, 11432, 11433, 11434, 11435, 11436, 11691, 11692, 11693, 11694,
   11697,
 ];
-let zipInput = 10009;
+let zipInput = 10065;
 let zip;
 
 for (let i = 0; i < zips.length; i++) {
@@ -127,6 +128,18 @@ for (let i = 0; i < covid.length; i++) {
 // console.log(data);
 
 const Map = () => {
+  const params = useParams();
+  const zipcode = params.zipcode;
+  if (typeof zipcode === "string" && zipcode.trim().length !== 0) {
+    console.log(zipcode);
+    const zipNum = Number(zipcode);
+    console.log(zipNum);
+    for (let i = 0; i < zips.length; i++) {
+      if (zipNum === zips[i]) {
+        zip = i;
+      }
+    }
+  }
   var middle = [covid[zip].lon, covid[zip].lat];
   const mapContainerRef = useRef(null);
 
@@ -270,6 +283,10 @@ const Map = () => {
           type: "fill",
           source: "zips",
           "source-layer": "nyc-zip-code-7b06h0",
+          layout: {
+            // make layer invisible by default
+            visibility: "none",
+          },
           paint: {
             "fill-color": matchExpression,
             "fill-opacity": 0.75,
@@ -284,6 +301,10 @@ const Map = () => {
           type: "fill",
           source: "zips",
           "source-layer": "nyc-zip-code-7b06h0",
+          layout: {
+            // make layer invisible by default
+            visibility: "none",
+          },
           paint: {
             "fill-color": matchExpression2,
             "fill-opacity": 0.75,
@@ -298,9 +319,31 @@ const Map = () => {
           type: "fill",
           source: "zips",
           "source-layer": "nyc-zip-code-7b06h0",
+          layout: {
+            // make layer invisible by default
+            visibility: "none",
+          },
           paint: {
             "fill-color": matchExpression3,
             "fill-opacity": 0.5,
+          },
+        },
+        "admin-1-boundary-bg"
+      );
+
+      map.addLayer(
+        {
+          id: "N/A",
+          type: "fill",
+          source: "zips",
+          "source-layer": "nyc-zip-code-7b06h0",
+          layout: {
+            // make layer invisible by default
+            visibility: "none",
+          },
+          paint: {
+            "fill-color": matchExpression3,
+            "fill-opacity": 0,
           },
         },
         "admin-1-boundary-bg"
@@ -407,7 +450,7 @@ const Map = () => {
       const popup = new mapboxgl.Popup({ closeOnClick: false })
         .setLngLat(currentFeature.geometry.coordinates)
         .setHTML(
-          `<h3><a href = "${currentFeature.Web}">${currentFeature.properties.Name}</a></h3><h4>${currentFeature.properties.Address}</h4><h4>${currentFeature.properties.Hours}</h4><img src="https://cdn.discordapp.com/attachments/729413416774664332/1050105121415110766/web-link.png">`
+          `<h3><a href = "${currentFeature.Web}">${currentFeature.properties.Name}</a></h3><h4>${currentFeature.properties.Address}</h4><h4>${currentFeature.properties.Hours}</h4>`
         )
         .addTo(map);
     }
@@ -441,7 +484,7 @@ const Map = () => {
           details.innerHTML += `<div><strong>${roundedDistance} miles away</strong></div>`;
         }
         if (store.Web) {
-          details.innerHTML += `<a href=" ${store.Web}"><img src="https://w7.pngwing.com/pngs/928/420/png-transparent-web-development-symbol-world-wide-web-web-design-text-logo.png"></a>`;
+          details.innerHTML += `<a href=" ${store.Web}"><img src="https://toppng.com/uploads/preview/web-png-jpg-transparent-stock-website-icon-blue-11563644926reanjnmk6x.png" width = "25" height = "25"></a>`;
         }
 
         link.addEventListener("click", function () {
@@ -528,15 +571,27 @@ const Map = () => {
           e.stopPropagation();
 
           const visibility = map.getLayoutProperty(clickedLayer, "visibility");
-          // map.setLayoutProperty("hospFill", "visibility", "none");
-
-          // Toggle layer visibility by changing the layout object's visibility property.
-          if (visibility === "visible") {
+          if (layers.children[clickedLayer].className === "") {
+            for (var i = 0; i < toggleableLayerIds.length; i++) {
+              if (clickedLayer === toggleableLayerIds[i]) {
+                layers.children[i].className = "active";
+                map.setLayoutProperty(
+                  toggleableLayerIds[i],
+                  "visibility",
+                  "visible"
+                );
+              } else {
+                layers.children[i].className = "";
+                map.setLayoutProperty(
+                  toggleableLayerIds[i],
+                  "visibility",
+                  "none"
+                );
+              }
+            }
+          } else if (layers.children[clickedLayer].className === "active") {
+            layers.children[clickedLayer].className = "";
             map.setLayoutProperty(clickedLayer, "visibility", "none");
-            this.className = "";
-          } else {
-            this.className = "active";
-            map.setLayoutProperty(clickedLayer, "visibility", "visible");
           }
         };
 
