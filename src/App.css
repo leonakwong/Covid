@@ -25,14 +25,40 @@
 }
 
 .App-link {
-  color: #5bcfef;
+  color: #61dafb;
 }
 
 .bg-myBlue {
   background-color: rgb(67, 125, 242);
-  padding-bottom: 20px;
+padding-bottom: 10px;
+}
+.content {
+  padding: 12px;
 }
 
+
+.spacing {
+  padding: 15px;
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+}
+
+.active {
+  background-color: red;
+  color: #fff;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+}
+
+.rounded {
+  border-radius: 15px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -40,16 +66,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-.sticky-nav {
-  position: sticky;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-  max-height: 55px;
-}
-.content {
-  padding-top: 75px;
 }
