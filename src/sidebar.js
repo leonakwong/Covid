@@ -17,6 +17,12 @@ function SideBar() {
       <>
         <nav id="menu"></nav>
 
+        {/* <div class="map-overlay" id="features">
+          <h2>Zip-Code:</h2>
+          <div id="pd"></div>
+        </div> */}
+        <div id="legend"></div>
+
         <div className="side">
           <div className="heading">
             <h1>Vaccine Centers</h1>

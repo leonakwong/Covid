@@ -1,77 +1,15 @@
 import React, { useRef, useEffect, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import "./Map.css";
-import geoJson from "./vaxCentersCon.json";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
 import * as turf from "@turf/turf";
-import covid from "./covidData2.json";
+import covid1 from "./covidData2.json";
 import Papa from "papaparse";
 import { useParams } from "react-router-dom";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoiZXRoYW5sYXZpbnNreTQ2IiwiYSI6ImNsOWZ4YzI5dTBkbnkzdm14ZGlwbzUwbTgifQ.jByzOogEAXnVPymbyXjj-Q";
-
-const stores = geoJson;
-
-stores.features.forEach(function (store, i) {
-  store.properties.id = i;
-});
-
-// Papa.parse(
-//   "https://raw.githubusercontent.com/nychealth/coronavirus-data/master/latest/hosp_death_last28days-by-modzcta.csv",
-//   {
-//     download: true,
-//     header: true,
-//     complete: function (results) {
-//       console.log(reuslts);
-//     },
-//   }
-// );
-
-// let testy = [];
-
-// const csvData = Papa.parse(
-//   "https://raw.githubusercontent.com/nychealth/coronavirus-data/master/latest/hosp_death_last28days-by-modzcta.csv",
-//   {
-//     download: true,
-//     header: true,
-//     complete: function (data) {
-//       results = data;
-//     },
-//   }
-// );
-
-// let testy = [];
-
-// function doStuff(teste) {
-//   //Data is usable here
-//   // console.log(teste);
-//   for (let i = 0; i < teste.length; i++) {
-//     testy.push({
-//       code: teste[i].ZIP.toString(),
-//       hdi: teste[i].hospitalization_count_28day,
-//     });
-//   }
-// }
-
-// function parseData(url, callBack) {
-//   Papa.parse(url, {
-//     header: true,
-//     download: true,
-//     header: true,
-//     complete: function (results) {
-//       callBack(results.data);
-//     },
-//   });
-// }
-
-// parseData(
-//   "https://raw.githubusercontent.com/nychealth/coronavirus-data/master/latest/hosp_death_last28days-by-modzcta.csv",
-//   doStuff
-// );
-
-// console.log(testy);
 
 let zips = [
   10001, 10002, 10003, 10004, 10005, 10006, 10007, 10009, 10010, 10011, 10012,
@@ -94,45 +32,20 @@ let zips = [
 ];
 let zipInput = 10065;
 let zip;
-
-for (let i = 0; i < zips.length; i++) {
-  if (zipInput == zips[i]) {
-    zip = i;
-  }
-}
-
-let data = [];
-let data2 = [];
-let data3 = [];
-
-for (let i = 0; i < covid.length; i++) {
-  data.push({
-    code: covid[i].ZIP.toString(),
-    hosp: covid[i].hospitalization_count_28day,
-  });
-}
-
-for (let i = 0; i < covid.length; i++) {
-  data2.push({
-    code: covid[i].ZIP.toString(),
-    pos: covid[i].people_positive_7day,
-  });
-}
-
-for (let i = 0; i < covid.length; i++) {
-  data3.push({
-    code: covid[i].ZIP.toString(),
-    death: covid[i].death_count_28day,
-  });
-}
-// console.log(data);
+let vax;
 
 const Map = () => {
   const params = useParams();
   const zipcode = params.zipcode;
-  const servType = params.vax;
-  console.log(servType);
-  if (typeof zipcode === "string" && zipcode.trim().length !== 0) {
+  const vax = params.vax;
+  if (!zipcode) {
+    for (let i = 0; i < zips.length; i++) {
+      if (zipInput === zips[i]) {
+        zip = i;
+      }
+    }
+  }
+  else if (typeof zipcode === "string" && zipcode.trim().length !== 0) {
     console.log(zipcode);
     const zipNum = Number(zipcode);
     console.log(zipNum);
@@ -142,22 +55,149 @@ const Map = () => {
       }
     }
   }
-  var middle = [covid[zip].lon, covid[zip].lat];
+
+  let mygeojson = { type: "FeatureCollection", features: [] };
+  let stores;
+  let test1;
+
+  async function getVax(url) {
+    await fetch(url)
+      .then((response) => response.json())
+      .then((responseJson) => {
+        // setTest1(responseJson);
+        test1 = responseJson;
+      });
+
+      for (let i = 0; i < test1.length; i++){
+        mygeojson.features[i] = {
+          type: "Feature",
+          Web: test1[i].website,
+          properties: {
+            loc_name: test1[i].loc_name,
+            loc_admin_street1: test1[i].loc_admin_street,
+            loc_admin_city: test1[i].loc_admin_city,
+            loc_admin_state: test1[i].loc_admin_state,
+            loc_admin_zip: test1[i].loc_admin_zip,
+            loc_phone: test1[i].loc_phone,
+            web_address: test1[i].web_address,
+          },
+          geometry: { 
+            type: "Point",
+            coordinates: [test1[i].longitude, test1[i].latitude]
+          },
+        };
+      }; 
+      stores = mygeojson;
+      console.log(stores);
+      stores.features.forEach(function (store, i) {
+        store.properties.id = i;
+      });
+  };
+  
+  console.log(vax);
+  let vaxlink;
+  if (vax === "Moderna"){
+    vaxlink = "http://localhost:4000/moderna";
+  }
+  else if (vax === "Pfizer BioTech"){
+    vaxlink = "http://localhost:4000/pfizer";
+  }
+  else if (vax === "Janssen"){
+    vaxlink = "http://localhost:4000/janssen";
+  }
+  else if (vax === "Novavax"){
+    vaxlink = "http://localhost:4000/novavax";
+  }
+  else if (vax === "Moderna Bivalent Booster"){
+    vaxlink = "http://localhost:4000/modernabivalent";
+  }
+  else if (vax === "Pfizer BioTech Bivalent Booster"){
+    vaxlink = "http://localhost:4000/pfizerbivalent";
+  }
+  else{
+    vaxlink = "http://localhost:4000/vax";
+  }
+  getVax(vaxlink);
+
+  let covid = [];
+
+  async function processCsv() {
+    const csvData1 = await new Promise((resolve) => {
+      const data = [];
+      Papa.parse(
+        "https://raw.githubusercontent.com/nychealth/coronavirus-data/master/latest/last7days-by-modzcta.csv",
+        {
+          header: true,
+          download: true,
+          step: function (result) {
+            data.push(result.data);
+          },
+          complete: function (results, file) {
+            resolve(data);
+          },
+        }
+      );
+    });
+
+    const csvData2 = await new Promise((resolve) => {
+      const data = [];
+      Papa.parse(
+        "https://raw.githubusercontent.com/nychealth/coronavirus-data/master/latest/hosp_death_last28days-by-modzcta.csv",
+        {
+          header: true,
+          download: true,
+          step: function (result) {
+            data.push(result.data);
+          },
+          complete: function (results, file) {
+            resolve(data);
+          },
+        }
+      );
+    });
+
+    for (let i = 0; i < csvData2.length - 1; i++) {
+      covid[i] = {
+        ZIP: Number(csvData1[i].modzcta),
+        ZIP_name: Number(csvData1[i].modzcta_name),
+        people_positive_7day: Number(csvData1[i].people_positive),
+        lat: Number(csvData1[i].lat),
+        lon: Number(csvData1[i].lon),
+        death_count_28day: Number(csvData2[i].death_count_28day),
+        hospitalization_count_28day: Number(
+          csvData2[i].hospitalization_count_28day
+        ),
+      };
+    }
+  }
+
+  processCsv();
+
+  let data = [];
+  let data2 = [];
+  let data3 = [];
+
+  let posArr = [];
+  let hospArr = [];
+  let deathArr = [];
+
+  var middle = [covid1[zip].lon, covid1[zip].lat];
+
+  
+
   const mapContainerRef = useRef(null);
 
-  // Initialize map when component mounts
+  
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
       style: "mapbox://styles/ethanlavinsky46/cla93j7p1000j14pa6sblzm26",
       center: middle,
       zoom: 15,
-    });
+    }, [middle]);
 
-    // disable map rotation using right click + drag
     map.dragRotate.disable();
 
-    // disable map rotation using touch rotation gesture
     map.touchZoomRotate.disableRotation();
 
     // const data = [
@@ -167,22 +207,96 @@ const Map = () => {
     // ];
 
     map.on("load", () => {
+      for (let i = 0; i < covid.length; i++) {
+        data.push({
+          code: covid[i].ZIP.toString(),
+          hosp: covid[i].hospitalization_count_28day,
+        });
+      }
+
+      for (let i = 0; i < covid.length; i++) {
+        data2.push({
+          code: covid[i].ZIP.toString(),
+          pos: covid[i].people_positive_7day,
+        });
+      }
+
+      for (let i = 0; i < covid.length; i++) {
+        data3.push({
+          code: covid[i].ZIP.toString(),
+          death: covid[i].death_count_28day,
+        });
+      }
+
+      for (let i = 0; i < data.length; i++) {
+        hospArr.push(data[i].hosp);
+      }
+
+      for (let i = 0; i < data2.length; i++) {
+        posArr.push(data2[i].pos);
+      }
+
+      for (let i = 0; i < data3.length; i++) {
+        deathArr.push(data3[i].death);
+      }
+
+      let posMax = Math.max.apply(null, posArr);
+      let hospMax = Math.max.apply(null, hospArr);
+      let deathMax = Math.max.apply(null, deathArr);
+
+      const layers = [
+        "Hospitalizations",
+        "0",
+        `${hospMax}`,
+        "",
+        "Positive Cases",
+        "0",
+        `${posMax}`,
+        "",
+        "Deaths",
+        "0",
+        `${deathMax}`,
+      ];
+      const colors = [
+        "",
+        "#000000",
+        "#00ff00",
+        "",
+        "",
+        "#000000",
+        "#ff00ff",
+        "",
+        "",
+        "#000000",
+        "#0000ff",
+      ];
+
+      // create legend
+      const legend = document.getElementById("legend");
+
+      layers.forEach((layer, i) => {
+        const color = colors[i];
+        const item = document.createElement("div");
+        const key = document.createElement("span");
+        key.className = "legend-key";
+        key.style.backgroundColor = color;
+
+        const value = document.createElement("span");
+        value.innerHTML = `${layer}`;
+        item.appendChild(key);
+        item.appendChild(value);
+        legend.appendChild(item);
+      });
+
       function addMarkers() {
-        /* For each feature in the GeoJSON object above: */
         for (const marker of stores.features) {
-          /* Create a div element for the marker. */
           const el = document.createElement("div");
-          /* Assign a unique `id` to the marker. */
           el.id = `marker-${marker.properties.id}`;
-          /* Assign the `marker` class to each marker for styling. */
           el.className = "marker";
 
           el.addEventListener("click", (e) => {
-            /* Fly to the point */
             flyToStore(marker);
-            /* Close all other popups and display popup for clicked store */
             createPopUp(marker);
-            /* Highlight listing in sidebar */
             const activeItem = document.getElementsByClassName("active");
             e.stopPropagation();
             if (activeItem[0]) {
@@ -194,11 +308,6 @@ const Map = () => {
             listing.classList.add("active");
           });
 
-          /**
-           * Create a marker using the div element
-           * defined above and add it to the map.
-           **/
-          // new mapboxgl.Marker() //default marker style
           new mapboxgl.Marker(el)
             .setLngLat(marker.geometry.coordinates)
             .addTo(map);
@@ -211,10 +320,10 @@ const Map = () => {
       });
 
       const geocoder = new MapboxGeocoder({
-        accessToken: mapboxgl.accessToken, // Set the access token
-        mapboxgl: mapboxgl, // Set the mapbox-gl instance
-        marker: true, // Use the geocoder's default marker style
-        bbox: [-75.063812, 40.336768, -72.977783, 41.121429], // Set the bounding box coordinates
+        accessToken: mapboxgl.accessToken,
+        mapboxgl: mapboxgl,
+        marker: true,
+        bbox: [-75.063812, 40.336768, -72.977783, 41.121429],
       });
 
       // map.addControl(geocoder, "top-left");
@@ -226,46 +335,36 @@ const Map = () => {
         url: "mapbox://ethanlavinsky46.c5dqzdw0",
       });
 
-      // Build a GL match expression that defines the color for every vector tile feature
-      // Use the ISO 3166-1 alpha 3 code as the lookup key for the country shape
       const matchExpression = ["match", ["get", "ZIP"]];
       const matchExpression2 = ["match", ["get", "ZIP"]];
       const matchExpression3 = ["match", ["get", "ZIP"]];
 
-      // Calculate color values for each country based on 'hdi' value
       for (const row of data) {
-        // Convert the range of data values to a suitable color
-        const green = (row["hosp"] / 50) * 255;
+        const green = (row["hosp"] / hospMax) * 255;
         const color = `rgb(0, ${green}, 0)`;
 
         matchExpression.push(row["code"], color);
       }
 
-      // Last value is the default, used where there is no data
       matchExpression.push("rgba(0, 0, 0, 0)");
 
-      // Calculate color values for each country based on 'hdi' value
       for (const row of data2) {
-        // Convert the range of data values to a suitable color
-        const red = (row["pos"] / 130) * 255;
-        const color2 = `rgb( ${red},0, 0)`;
+        const red = (row["pos"] / posMax) * 255;
+        const color2 = `rgb( ${red},0, ${red})`;
 
         matchExpression2.push(row["code"], color2);
       }
 
-      // Last value is the default, used where there is no data
       matchExpression2.push("rgba(0, 0, 0, 0)");
 
-      // Calculate color values for each country based on 'hdi' value
+
       for (const row of data3) {
-        // Convert the range of data values to a suitable color
-        const blue = (row["death"] / 9) * 255;
+        const blue = (row["death"] / deathMax) * 255;
         const color2 = `rgb( 0,0, ${blue})`;
 
         matchExpression3.push(row["code"], color2);
       }
 
-      // Last value is the default, used where there is no data
       matchExpression3.push("rgba(0, 0, 0, 0)");
 
       // map.addLayer({
@@ -281,7 +380,7 @@ const Map = () => {
 
       map.addLayer(
         {
-          id: "hospFill",
+          id: "Hospitalizations",
           type: "fill",
           source: "zips",
           "source-layer": "nyc-zip-code-7b06h0",
@@ -299,7 +398,7 @@ const Map = () => {
 
       map.addLayer(
         {
-          id: "posFill",
+          id: "Positive Cases",
           type: "fill",
           source: "zips",
           "source-layer": "nyc-zip-code-7b06h0",
@@ -317,7 +416,7 @@ const Map = () => {
 
       map.addLayer(
         {
-          id: "deathFill",
+          id: "Deaths",
           type: "fill",
           source: "zips",
           "source-layer": "nyc-zip-code-7b06h0",
@@ -349,23 +448,17 @@ const Map = () => {
       // });
 
       map.on("click", (event) => {
-        /* Determine if a feature in the "locations" layer exists at that point. */
         const features = map.queryRenderedFeatures(event.point, {
-          layers: ["locations"],
         });
 
-        /* If it does not exist, return */
         if (!features.length) return;
 
         const clickedPoint = features[0];
 
-        /* Fly to the point */
         flyToStore(clickedPoint);
 
-        /* Close all other popups and display popup for clicked store */
         createPopUp(clickedPoint);
 
-        /* Highlight listing in sidebar (and remove highlight for all other listings) */
         const activeItem = document.getElementsByClassName("active");
         if (activeItem[0]) {
           activeItem[0].classList.remove("active");
@@ -380,9 +473,9 @@ const Map = () => {
 
       function fisrt() {}
 
-      // geocoder.on("result", (event) => {
+
       const searchResult = middle;
-      // const searchResult = event.result.geometry;
+
       const options = { units: "miles" };
       for (const store of stores.features) {
         store.properties.distance = turf.distance(
@@ -398,7 +491,7 @@ const Map = () => {
         if (a.properties.distance < b.properties.distance) {
           return -1;
         }
-        return 0; // a must be equal to b
+        return 0; 
       });
       const listings = document.getElementById("listings");
       while (listings.firstChild) {
@@ -416,7 +509,7 @@ const Map = () => {
       });
 
       createPopUp(stores.features[0]);
-      // });
+      
     });
 
     function flyToStore(currentFeature) {
@@ -428,7 +521,6 @@ const Map = () => {
     
     function createPopUp(currentFeature) {
       const popUps = document.getElementsByClassName("mapboxgl-popup");
-      /** Check if there is already a popup on the map and if so, remove it */
       if (popUps[0]) popUps[0].remove();
       if (!currentFeature.properties.web_address) {
         const popup = new mapboxgl.Popup({ closeOnClick: false })
@@ -438,7 +530,7 @@ const Map = () => {
         )
         .addTo(map);
       }
-      if (currentFeature.properties.web_address){
+      else if (currentFeature.properties.web_address){
         const popup = new mapboxgl.Popup({ closeOnClick: false })
         .setLngLat(currentFeature.geometry.coordinates)
         .setHTML(
@@ -450,24 +542,18 @@ const Map = () => {
 
     function buildLocationList(stores) {
       for (const store of stores.features) {
-        /* Add a new listing section to the sidebar. */
         const listings = document.getElementById("listings");
         const listing = listings.appendChild(document.createElement("div"));
-        /* Assign a unique `id` to the listing. */
         listing.id = `listing-${store.properties.id}`;
-        /* Assign the `item` class to each listing for styling. */
         listing.className = "item";
 
-        /* Add the link to the individual listing created above. */
         const link = listing.appendChild(document.createElement("a"));
         link.href = "#";
         link.className = "title";
         link.id = `link-${store.properties.id}`;
         link.innerHTML = `${store.properties.loc_name}`;
 
-        /* Add details to the individual listing. */
         const details = listing.appendChild(document.createElement("div"));
-        // details.innerHTML = `${store.properties.Borough}`;
         if (store.properties.loc_admin_street1) {
           details.innerHTML += `  ${store.properties.loc_admin_street1}`;
         }
@@ -533,35 +619,28 @@ const Map = () => {
       ];
     }
 
-    // After the last frame rendered before the map enters an "idle" state.
     map.on("idle", () => {
-      // If these two layers were not added to the map, abort
       if (
-        !map.getLayer("hospFill") ||
-        !map.getLayer("posFill") ||
-        !map.getLayer("deathFill")
+        !map.getLayer("Hospitalizations") ||
+        !map.getLayer("Positive Cases") ||
+        !map.getLayer("Deaths")
       ) {
         return;
       }
 
-      // Enumerate ids of the layers.
-      const toggleableLayerIds = ["hospFill", "posFill", "deathFill"];
+      const toggleableLayerIds = ["Hospitalizations", "Positive Cases", "Deaths"];
 
-      // Set up the corresponding toggle button for each layer.
       for (const id of toggleableLayerIds) {
-        // Skip layers that already have a button set up.
         if (document.getElementById(id)) {
           continue;
         }
 
-        // Create a link.
         const link = document.createElement("a");
         link.id = id;
         link.href = "#";
         link.textContent = id;
         link.className = "";
 
-        // Show or hide layer when the toggle is clicked.
         link.onclick = function (e) {
           const clickedLayer = this.textContent;
           e.preventDefault();

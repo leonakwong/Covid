@@ -4,6 +4,7 @@ import "./App.css";
 import "./sidebar.css";
 
 function SideBar2() {
+  const [data, setData] = React.useState(null);
 
   // React.useEffect(() => {
   //   fetch("/api")
@@ -14,11 +15,17 @@ function SideBar2() {
   return (
     <div>
       <>
-    
-        <nav id="menu"></nav>
+      <nav id="menu"></nav>
+
+      {/* <div class="map-overlay" id="features">
+          <h2>Zip-Code:</h2>
+          <div id="pd"></div>
+        </div> */}
+        <div id="legend"></div>
+
         <div className="side">
           <div className="heading">
-            <h1>Testing Centers</h1>
+            <h1>Test Centers</h1>
           </div>
           <div id="listings" className="listings" />
         </div>

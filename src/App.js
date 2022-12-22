@@ -3,7 +3,6 @@ import './App.css';
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav, Navbar } from 'react-bootstrap';
-import Form from './Form';
 import NewsList from './NewsList';
 import Home from './Home';
 //import { DataComponent } from './Data.tsx';
@@ -17,6 +16,7 @@ import DataComponent from './Data.tsx';
 
 function App() {
   const [data, setData] = React.useState(null);
+  let ActiveLink = 'activeLink';
   return (
     <>
       {/* <div>
@@ -28,7 +28,7 @@ function App() {
           <Navbar bg='myBlue' variant="dark" className="sticky-nav">
             <Navbar.Brand> Project Hygieia </Navbar.Brand>
             <Nav>
-              <Nav.Link as={Link} to="/">Home</Nav.Link>
+              <Nav.Link as={Link} to="/" >Home</Nav.Link>
               <Nav.Link as={Link} to="/FindLocations">Find Locations</Nav.Link>
               <Nav.Link as={Link} to="/NewsList">News</Nav.Link>
               <Nav.Link as={Link} to="/Data">Data Visualized</Nav.Link>

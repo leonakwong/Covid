@@ -34,7 +34,7 @@ const surveyJson = {
       choices: [
         "Moderna",
         "Pfizer BioTech",
-        "Jansenn",
+        "Janssen",
         "Novavax",
         "Moderna Bivalent Booster",
         "Pfizer BioTech Bivalent Booster",
@@ -102,6 +102,9 @@ function FindVaccine() {
         break;
       case "Rapid Testing":
         navigate("/RapidTesting/" + sender.data.zipcode + "/" + sender.data.rapid);
+        break;
+      case "Hospitals":
+        navigate("/Hospitals/" + sender.data.zipcode);
         break;
       default:
       // code block

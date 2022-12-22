@@ -18,6 +18,8 @@ function Home() {
         there is questionaire and maps to guide you to test sites and vaccine centers. Another feature of the site is the news feed, which 
         brings you top headlines from around the world regarding COVID-19. Feel free to jump around the site and explore!
       </p>
+      <br></br>
+      <br></br>
     </div>
   );
 }

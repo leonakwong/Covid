@@ -87,7 +87,7 @@ import {
   export default function DataComponent(): JSX.Element {
     return (
       <div className="smaller" style={{width: '50%', height: '50%', }}>
-        
+        <br></br>
         <Bar options={options} data={Hesitancy} />
         <br></br>
         <p>Here we have a bar chart of hesitancy rates across every state using estimates from the CDC and data from the U.S. Census Bureau’s Household Pulse Survey (HPS).
@@ -96,6 +96,7 @@ import {
            
 
         </p>
+        <br></br>
         <Bar options={options1} data={Data} />
         <br></br>
         <p>Here we have a bar chart of COVID-19 deaths adjusted for population. To compare the differences between a state with a high total hesitancy rate and a state with a low total hesitancy rate, let's take a look at Arkansas and Oregon.
@@ -107,6 +108,7 @@ import {
           While there may be a correlation between high vaccine hesitancy rates and high death rates in states. Further research needs to be done to confirm any causation
           and the potential reasonings behind such high rates of hesitancy.
         </p>
+        <br></br>
       </div>
     
     );

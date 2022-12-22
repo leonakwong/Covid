@@ -1,14 +1,12 @@
 import React, { useRef, useEffect, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import "./Map.css";
-//import GeoJson from "./hospital";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
 import * as turf from "@turf/turf";
 import covid1 from "./covidData2.json";
 import Papa from "papaparse";
 import { useParams } from "react-router-dom";
-// import { getHospitals } from "../../be/test";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoiZXRoYW5sYXZpbnNreTQ2IiwiYSI6ImNsOWZ4YzI5dTBkbnkzdm14ZGlwbzUwbTgifQ.jByzOogEAXnVPymbyXjj-Q";
@@ -38,7 +36,14 @@ let zip;
 const Map = () => {
   const params = useParams();
   const zipcode = params.zipcode;
-  if (typeof zipcode === "string" && zipcode.trim().length !== 0) {
+  if (!zipcode) {
+    for (let i = 0; i < zips.length; i++) {
+      if (zipInput === zips[i]) {
+        zip = i;
+      }
+    }
+  }
+  else if (typeof zipcode === "string" && zipcode.trim().length !== 0) {
     console.log(zipcode);
     const zipNum = Number(zipcode);
     console.log(zipNum);
@@ -77,6 +82,7 @@ const Map = () => {
             Zip:test1[i].Zip,
             PhoneNumber: test1[i].PhoneNumber,
             Website: test1[i].Website,
+            Mortality: test1[i].MortalityRate,
           },
           geometry: { 
             type: "Point",
@@ -147,11 +153,7 @@ const Map = () => {
 
   processCsv();
 
-  for (let i = 0; i < zips.length; i++) {
-    if (zipInput == zips[i]) {
-      zip = i;
-    }
-  }
+  console.log(zip);
 
   let data = [];
   let data2 = [];
@@ -163,7 +165,6 @@ const Map = () => {
 
   var middle = [covid1[zip].lon, covid1[zip].lat];
 
-  // Initialize map when component mounts
 
   const mapContainerRef = useRef(null);
 
@@ -175,10 +176,8 @@ const Map = () => {
       zoom: 15,
     });
 
-    // disable map rotation using right click + drag
     map.dragRotate.disable();
 
-    // disable map rotation using touch rotation gesture
     map.touchZoomRotate.disableRotation();
 
     map.on("load", () => {
@@ -246,7 +245,6 @@ const Map = () => {
         "#0000ff",
       ];
 
-      // create legend
       const legend = document.getElementById("legend");
 
       layers.forEach((layer, i) => {
@@ -265,21 +263,14 @@ const Map = () => {
 
       // console.log(posMax);
       function addMarkers() {
-        /* For each feature in the GeoJSON object above: */
         for (const marker of stores.features) {
-          /* Create a div element for the marker. */
           const el = document.createElement("div");
-          /* Assign a unique `id` to the marker. */
           el.id = `marker-${marker.properties.id}`;
-          /* Assign the `marker` class to each marker for styling. */
           el.className = "marker";
 
           el.addEventListener("click", (e) => {
-            /* Fly to the point */
             flyToStore(marker);
-            /* Close all other popups and display popup for clicked store */
             createPopUp(marker);
-            /* Highlight listing in sidebar */
             const activeItem = document.getElementsByClassName("active");
             e.stopPropagation();
             if (activeItem[0]) {
@@ -291,11 +282,7 @@ const Map = () => {
             listing.classList.add("active");
           });
 
-          /**
-           * Create a marker using the div element
-           * defined above and add it to the map.
-           **/
-          // new mapboxgl.Marker() //default marker style
+
           new mapboxgl.Marker(el)
             .setLngLat(marker.geometry.coordinates)
             .addTo(map);
@@ -308,10 +295,10 @@ const Map = () => {
       });
 
       const geocoder = new MapboxGeocoder({
-        accessToken: mapboxgl.accessToken, // Set the access token
-        mapboxgl: mapboxgl, // Set the mapbox-gl instance
-        marker: true, // Use the geocoder's default marker style
-        bbox: [-75.063812, 40.336768, -72.977783, 41.121429], // Set the bounding box coordinates
+        accessToken: mapboxgl.accessToken, 
+        mapboxgl: mapboxgl, 
+        marker: true, 
+        bbox: [-75.063812, 40.336768, -72.977783, 41.121429], 
       });
 
       // map.addControl(geocoder, "top-left");
@@ -323,46 +310,35 @@ const Map = () => {
         url: "mapbox://ethanlavinsky46.c5dqzdw0",
       });
 
-      // Build a GL match expression that defines the color for every vector tile feature
-      // Use the ISO 3166-1 alpha 3 code as the lookup key for the country shape
       const matchExpression = ["match", ["get", "ZIP"]];
       const matchExpression2 = ["match", ["get", "ZIP"]];
       const matchExpression3 = ["match", ["get", "ZIP"]];
 
-      // Calculate color values for each country based on 'hdi' value
       for (const row of data) {
-        // Convert the range of data values to a suitable color
         const green = (row["hosp"] / hospMax) * 255;
         const color = `rgb(0, ${green}, 0)`;
 
         matchExpression.push(row["code"], color);
       }
 
-      // Last value is the default, used where there is no data
       matchExpression.push("rgba(0, 0, 0, 0)");
 
-      // Calculate color values for each country based on 'hdi' value
       for (const row of data2) {
-        // Convert the range of data values to a suitable color
         const red = (row["pos"] / posMax) * 255;
         const color2 = `rgb( ${red},0, ${red})`;
 
         matchExpression2.push(row["code"], color2);
       }
 
-      // Last value is the default, used where there is no data
       matchExpression2.push("rgba(0, 0, 0, 0)");
 
-      // Calculate color values for each country based on 'hdi' value
       for (const row of data3) {
-        // Convert the range of data values to a suitable color
         const blue = (row["death"] / deathMax) * 255;
         const color2 = `rgb( 0,0, ${blue})`;
 
         matchExpression3.push(row["code"], color2);
       }
 
-      // Last value is the default, used where there is no data
       matchExpression3.push("rgba(0, 0, 0, 0)");
 
       map.addLayer(
@@ -372,7 +348,6 @@ const Map = () => {
           source: "zips",
           "source-layer": "nyc-zip-code-7b06h0",
           layout: {
-            // make layer invisible by default
             visibility: "none",
           },
           paint: {
@@ -390,7 +365,6 @@ const Map = () => {
           source: "zips",
           "source-layer": "nyc-zip-code-7b06h0",
           layout: {
-            // make layer invisible by default
             visibility: "none",
           },
           paint: {
@@ -408,7 +382,6 @@ const Map = () => {
           source: "zips",
           "source-layer": "nyc-zip-code-7b06h0",
           layout: {
-            // make layer invisible by default
             visibility: "none",
           },
           paint: {
@@ -420,23 +393,17 @@ const Map = () => {
       );
 
       map.on("click", (event) => {
-        /* Determine if a feature in the "locations" layer exists at that point. */
         const features = map.queryRenderedFeatures(event.point, {
-          layers: ["locations"],
         });
 
-        /* If it does not exist, return */
         if (!features.length) return;
 
         const clickedPoint = features[0];
 
-        /* Fly to the point */
         flyToStore(clickedPoint);
 
-        /* Close all other popups and display popup for clicked store */
         createPopUp(clickedPoint);
 
-        /* Highlight listing in sidebar (and remove highlight for all other listings) */
         const activeItem = document.getElementsByClassName("active");
         if (activeItem[0]) {
           activeItem[0].classList.remove("active");
@@ -449,11 +416,7 @@ const Map = () => {
 
       buildLocationList(stores);
 
-      function fisrt() {}
-
-      // geocoder.on("result", (event) => {
       const searchResult = middle;
-      // const searchResult = event.result.geometry;
       const options = { units: "miles" };
       for (const store of stores.features) {
         store.properties.distance = turf.distance(
@@ -469,7 +432,7 @@ const Map = () => {
         if (a.properties.distance < b.properties.distance) {
           return -1;
         }
-        return 0; // a must be equal to b
+        return 0;
       });
       const listings = document.getElementById("listings");
       while (listings.firstChild) {
@@ -487,7 +450,6 @@ const Map = () => {
       });
 
       createPopUp(stores.features[0]);
-      // });
     });
 
     function flyToStore(currentFeature) {
@@ -499,37 +461,45 @@ const Map = () => {
 
     function createPopUp(currentFeature) {
       const popUps = document.getElementsByClassName("mapboxgl-popup");
-      /** Check if there is already a popup on the map and if so, remove it */
       if (popUps[0]) popUps[0].remove();
-
-      const popup = new mapboxgl.Popup({ closeOnClick: false })
+  
+      if (currentFeature.properties.Mortality){
+        const popup = new mapboxgl.Popup({ closeOnClick: false })
+        .setLngLat(currentFeature.geometry.coordinates)
+        .setHTML(
+          `<h3><a href = "${currentFeature.properties.Website}">${currentFeature.properties.Name}</a></h3><h4>${currentFeature.properties.Address}, ${currentFeature.properties.Borough}, NY, ${currentFeature.properties.Zip}</h4><h5>Covid Mortality Rate: ${currentFeature.properties.Mortality}%</h5>`
+        )
+        .addTo(map);
+      }
+      else{
+        const popup = new mapboxgl.Popup({ closeOnClick: false })
         .setLngLat(currentFeature.geometry.coordinates)
         .setHTML(
           `<h3><a href = "${currentFeature.properties.Website}">${currentFeature.properties.Name}</a></h3><h4>${currentFeature.properties.Address}, ${currentFeature.properties.Borough}, NY, ${currentFeature.properties.Zip}</h4>`
         )
         .addTo(map);
+      }
     }
 
     function buildLocationList(stores) {
       for (const store of stores.features) {
-        /* Add a new listing section to the sidebar. */
         const listings = document.getElementById("listings");
         const listing = listings.appendChild(document.createElement("div"));
-        /* Assign a unique `id` to the listing. */
         listing.id = `listing-${store.properties.id}`;
-        /* Assign the `item` class to each listing for styling. */
         listing.className = "item";
 
-        /* Add the link to the individual listing created above. */
         const link = listing.appendChild(document.createElement("a"));
         link.href = "#";
         link.className = "title";
         link.id = `link-${store.properties.id}`;
-        link.innerHTML = `${store.properties.Name}`;
-
-        /* Add details to the individual listing. */
+        if (store.properties.Mortality){
+          link.innerHTML = ` <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/NYC_Health_%2B_Hospitals_logo.svg/1200px-NYC_Health_%2B_Hospitals_logo.svg.png" height = "25"></a>   ${store.properties.Name}`;
+        }
+        else{
+          link.innerHTML = `${store.properties.Name}`;
+        }
+          
         const details = listing.appendChild(document.createElement("div"));
-        // details.innerHTML = `${store.properties.Borough}`;
         if (store.properties.Address) {
           details.innerHTML += `${store.properties.Address}, ${store.properties.Borough}, NY, ${store.properties.Zip}`;
         }
@@ -594,10 +564,8 @@ const Map = () => {
       ];
     }
 
-    // After the last frame rendered before the map enters an "idle" state.
     map.on("idle", () => {
       // console.log(covid);
-      // If these two layers were not added to the map, abort
       if (
         !map.getLayer("Hospitalizations") ||
         !map.getLayer("Positive Cases") ||
@@ -606,28 +574,23 @@ const Map = () => {
         return;
       }
 
-      // Enumerate ids of the layers.
       const toggleableLayerIds = [
         "Hospitalizations",
         "Positive Cases",
         "Deaths",
       ];
 
-      // Set up the corresponding toggle button for each layer.
       for (const id of toggleableLayerIds) {
-        // Skip layers that already have a button set up.
         if (document.getElementById(id)) {
           continue;
         }
 
-        // Create a link.
         const link = document.createElement("a");
         link.id = id;
         link.href = "#";
         link.textContent = id;
         link.className = "";
 
-        // Show or hide layer when the toggle is clicked.
         link.onclick = function (e) {
           const clickedLayer = this.textContent;
           e.preventDefault();
