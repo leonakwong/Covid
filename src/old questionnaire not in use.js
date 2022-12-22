@@ -1,3 +1,5 @@
+//OLD CODE NOT IN USE just here if you want insight into the learning process
+
 import React from 'react';
 import { useState } from 'react';
 
